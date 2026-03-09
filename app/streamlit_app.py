@@ -11,7 +11,8 @@ from src.recommendation_engine import recommend_actions
 from utils.document_exporter import export_to_word
 
 
-st.title("AI Incident Investigation Assistant")
+st.title("🛠 AI Incident Investigation Assistant")
+st.caption("Machine Learning Powered Root Cause Analysis")
 
 description = st.text_area("Enter Incident Description")
 
@@ -32,7 +33,7 @@ if st.button("Analyze Incident"):
     report = generate_report(description, root_cause)
 
     st.subheader("Generated Report")
-    st.text(report)
+    st.code(report)
 
     if st.button("Export Report"):
 
