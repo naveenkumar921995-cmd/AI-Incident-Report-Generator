@@ -1,5 +1,11 @@
-incident,activity,hazard,root_cause
-Slip while carrying pipe,Pipe handling,Oil spill,Poor housekeeping
-Hand injury during pump repair,Maintenance,Wrong tool,Improper tool usage
-Worker tripped near ladder,Inspection,Poor lighting,Inadequate workplace lighting
-Chemical spill during transfer,Material handling,Improper valve,Improper procedure
+incident,root_cause
+Worker slipped on oil spill,Poor housekeeping
+Technician injured hand using wrong tool,Improper tool usage
+Worker tripped due to poor lighting,Inadequate workplace lighting
+Chemical spill during transfer,Improper procedure
+Worker hit by falling object,Lack of proper storage
+Slip near wet floor,Poor housekeeping
+Hand injury during maintenance,Improper tool usage
+Trip hazard in walkway,Poor housekeeping
+Equipment leak during operation,Equipment failure
+Worker slipped near pump area,Poor housekeeping
