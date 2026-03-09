@@ -1,9 +1,15 @@
 import streamlit as st
+import sys
+import os
+
+# Add project root directory to Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.root_cause_predictor import predict_root_cause
 from src.report_generator import generate_report
 from src.recommendation_engine import recommend_actions
 from utils.document_exporter import export_to_word
+
 
 st.title("AI Incident Investigation Assistant")
 
