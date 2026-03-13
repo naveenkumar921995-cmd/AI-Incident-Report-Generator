@@ -1,13 +1,17 @@
-.main {
-    background-color: #f5f7fb;
+body {
+    background-color:#f5f7fb;
+}
+
+.block-container {
+    padding-top:2rem;
 }
 
 h1 {
-    font-weight: 700;
+    font-weight:700;
 }
 
-.stMetric {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
+.metric-container {
+    background:white;
+    padding:20px;
+    border-radius:10px;
 }
