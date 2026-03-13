@@ -1,7 +1,1001 @@
 incident,root_cause
-Worker slipped on oil spill,Poor housekeeping
-Technician injured hand using wrong tool,Improper tool usage
-Worker tripped due to poor lighting,Inadequate workplace lighting
-Chemical spill during transfer,Improper procedure
-Worker hit by falling object,Lack of proper storage
-
+Worker slipped due to loose cable on floor,Poor housekeeping
+Trip hazard caused by water spill in production area,Poor housekeeping
+Worker struck by metal pipe while working in warehouse,Unsafe work practice
+Worker struck by toolbox while working in production area,Unsafe work practice
+Poor lighting in maintenance workshop caused worker to trip,Poor housekeeping
+Worker injured while handling welding machine,Improper tool usage
+Worker injured due to improper use of hand saw,Improper tool usage
+Worker slipped on scattered tools near loading dock,Poor housekeeping
+Worker tripped on water spill while carrying materials,Poor housekeeping
+Worker slipped on debris near loading dock,Poor housekeeping
+Improper stacking of pipes caused falling objects,Unsafe work practice
+Employee slipped while walking through production area,Poor housekeeping
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Worker injured while handling welding machine,Improper tool usage
+Employee slipped while walking through factory floor,Poor housekeeping
+Poor lighting in warehouse caused worker to trip,Poor housekeeping
+Worker slipped due to debris on floor,Poor housekeeping
+Employee hit by moving crane hook in factory floor,Unsafe work practice
+Worker injured due to improper use of welding machine,Improper tool usage
+Employee misused cutting knife during task,Improper tool usage
+Worker struck by falling material while working in production area,Unsafe work practice
+Worker slipped due to oil spill on floor,Poor housekeeping
+Employee misused cutting knife during task,Improper tool usage
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Worker injured due to improper use of cutting knife,Improper tool usage
+Worker struck by metal pipe while working in production area,Unsafe work practice
+Worker cut hand while using hand saw,Improper tool usage
+Trip hazard caused by oil spill in factory floor,Poor housekeeping
+Worker tripped on scattered tools while carrying materials,Poor housekeeping
+Employee slipped while walking through factory floor,Poor housekeeping
+Worker slipped on oil spill near warehouse,Poor housekeeping
+Employee fell from crane hook during maintenance,Unsafe work practice
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Worker injured while handling drill machine,Improper tool usage
+Worker struck by metal pipe while working in factory floor,Unsafe work practice
+Worker cut hand while using grinder,Improper tool usage
+Worker injured due to improper use of drill machine,Improper tool usage
+Worker slipped on scattered tools near maintenance workshop,Poor housekeeping
+Employee hit by moving crane hook in maintenance workshop,Unsafe work practice
+Worker injured while handling hand saw,Improper tool usage
+Employee hit by moving forklift in warehouse,Unsafe work practice
+Trip hazard caused by water spill in production area,Poor housekeeping
+Employee slipped while walking through factory floor,Poor housekeeping
+Worker injured due to improper use of drill machine,Improper tool usage
+Poor lighting in maintenance workshop caused worker to trip,Poor housekeeping
+Employee fell from crane hook during maintenance,Unsafe work practice
+Worker cut hand while using hand saw,Improper tool usage
+Improper stacking of boxes caused falling objects,Unsafe work practice
+Employee fell from forklift during maintenance,Unsafe work practice
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Employee misused drill machine during task,Improper tool usage
+Employee fell from crane hook during maintenance,Unsafe work practice
+Employee hit by moving mobile scaffold in maintenance workshop,Unsafe work practice
+Worker tripped on scattered tools while carrying materials,Poor housekeeping
+Worker slipped on scattered tools near loading dock,Poor housekeeping
+Worker slipped due to oil spill on floor,Poor housekeeping
+Worker slipped due to uneven floor on floor,Poor housekeeping
+Employee slipped while walking through warehouse,Poor housekeeping
+Employee fell from forklift during maintenance,Unsafe work practice
+Employee misused drill machine during task,Improper tool usage
+Employee tripped over water spill in factory floor,Poor housekeeping
+Worker slipped on loose cable near production area,Poor housekeeping
+Employee misused grinder during task,Improper tool usage
+Worker injured while handling grinder,Improper tool usage
+Poor lighting in production area caused worker to trip,Poor housekeeping
+Worker injured due to improper use of welding machine,Improper tool usage
+Worker slipped due to water spill on floor,Poor housekeeping
+Worker slipped due to oil spill on floor,Poor housekeeping
+Worker tripped on loose cable while carrying materials,Poor housekeeping
+Trip hazard caused by water spill in factory floor,Poor housekeeping
+Worker cut hand while using cutting knife,Improper tool usage
+Worker slipped due to scattered tools on floor,Poor housekeeping
+Worker tripped on debris while carrying materials,Poor housekeeping
+Worker cut hand while using drill machine,Improper tool usage
+Worker cut hand while using hand saw,Improper tool usage
+Worker cut hand while using cutting knife,Improper tool usage
+Worker injured while handling cutting knife,Improper tool usage
+Worker struck by metal pipe while working in production area,Unsafe work practice
+Worker struck by metal pipe while working in production area,Unsafe work practice
+Worker slipped due to loose cable on floor,Poor housekeeping
+Employee slipped while walking through warehouse,Poor housekeeping
+Trip hazard caused by loose cable in maintenance workshop,Poor housekeeping
+Employee hit by moving mobile scaffold in maintenance workshop,Unsafe work practice
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Trip hazard caused by loose cable in maintenance workshop,Poor housekeeping
+Worker injured while handling welding machine,Improper tool usage
+Worker injured while handling grinder,Improper tool usage
+Improper stacking of boxes caused falling objects,Unsafe work practice
+Worker struck by falling material while working in loading dock,Unsafe work practice
+Employee tripped over scattered tools in factory floor,Poor housekeeping
+Poor lighting in warehouse caused worker to trip,Poor housekeeping
+Trip hazard caused by water spill in warehouse,Poor housekeeping
+Employee fell from ladder during maintenance,Unsafe work practice
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Trip hazard caused by loose cable in warehouse,Poor housekeeping
+Worker slipped due to debris on floor,Poor housekeeping
+Employee slipped while walking through loading dock,Poor housekeeping
+Employee tripped over water spill in factory floor,Poor housekeeping
+Worker injured while handling drill machine,Improper tool usage
+Worker slipped on oil spill near factory floor,Poor housekeeping
+Employee slipped while walking through production area,Poor housekeeping
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Worker injured due to improper use of drill machine,Improper tool usage
+Trip hazard caused by water spill in factory floor,Poor housekeeping
+Worker slipped on debris near loading dock,Poor housekeeping
+Employee misused welding machine during task,Improper tool usage
+Poor lighting in production area caused worker to trip,Poor housekeeping
+Worker slipped on loose cable near warehouse,Poor housekeeping
+Worker cut hand while using cutting knife,Improper tool usage
+Employee misused drill machine during task,Improper tool usage
+Employee tripped over oil spill in warehouse,Poor housekeeping
+Poor lighting in factory floor caused worker to trip,Poor housekeeping
+Worker slipped on uneven floor near loading dock,Poor housekeeping
+Employee tripped over debris in factory floor,Poor housekeeping
+Employee misused welding machine during task,Improper tool usage
+Worker injured due to improper use of hand saw,Improper tool usage
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Employee fell from ladder during maintenance,Unsafe work practice
+Worker injured while handling grinder,Improper tool usage
+Trip hazard caused by water spill in production area,Poor housekeeping
+Employee fell from crane hook during maintenance,Unsafe work practice
+Trip hazard caused by water spill in maintenance workshop,Poor housekeeping
+Worker slipped due to scattered tools on floor,Poor housekeeping
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Employee hit by moving ladder in maintenance workshop,Unsafe work practice
+Employee slipped while walking through warehouse,Poor housekeeping
+Employee slipped while walking through factory floor,Poor housekeeping
+Worker injured due to improper use of drill machine,Improper tool usage
+Worker injured while handling drill machine,Improper tool usage
+Worker tripped on loose cable while carrying materials,Poor housekeeping
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Improper stacking of pipes caused falling objects,Unsafe work practice
+Worker injured while handling hand saw,Improper tool usage
+Worker slipped due to loose cable on floor,Poor housekeeping
+Worker injured due to improper use of cutting knife,Improper tool usage
+Employee misused cutting knife during task,Improper tool usage
+Trip hazard caused by loose cable in factory floor,Poor housekeeping
+Worker slipped due to loose cable on floor,Poor housekeeping
+Worker tripped on water spill while carrying materials,Poor housekeeping
+Worker slipped on uneven floor near loading dock,Poor housekeeping
+Trip hazard caused by loose cable in factory floor,Poor housekeeping
+Worker injured due to improper use of cutting knife,Improper tool usage
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Worker struck by falling material while working in warehouse,Unsafe work practice
+Employee fell from ladder during maintenance,Unsafe work practice
+Worker slipped on water spill near factory floor,Poor housekeeping
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Worker injured due to improper use of welding machine,Improper tool usage
+Employee misused welding machine during task,Improper tool usage
+Worker injured due to improper use of cutting knife,Improper tool usage
+Worker tripped on debris while carrying materials,Poor housekeeping
+Worker injured due to improper use of hand saw,Improper tool usage
+Employee fell from forklift during maintenance,Unsafe work practice
+Worker cut hand while using hand saw,Improper tool usage
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Trip hazard caused by uneven floor in loading dock,Poor housekeeping
+Employee misused hand saw during task,Improper tool usage
+Trip hazard caused by uneven floor in maintenance workshop,Poor housekeeping
+Trip hazard caused by water spill in maintenance workshop,Poor housekeeping
+Employee slipped while walking through loading dock,Poor housekeeping
+Improper stacking of boxes caused falling objects,Unsafe work practice
+Worker slipped on scattered tools near warehouse,Poor housekeeping
+Poor lighting in warehouse caused worker to trip,Poor housekeeping
+Worker injured due to improper use of welding machine,Improper tool usage
+Employee misused drill machine during task,Improper tool usage
+Trip hazard caused by uneven floor in maintenance workshop,Poor housekeeping
+Worker struck by toolbox while working in production area,Unsafe work practice
+Poor lighting in maintenance workshop caused worker to trip,Poor housekeeping
+Worker slipped due to uneven floor on floor,Poor housekeeping
+Worker slipped on loose cable near factory floor,Poor housekeeping
+Worker slipped on loose cable near loading dock,Poor housekeeping
+Poor lighting in production area caused worker to trip,Poor housekeeping
+Worker injured while handling welding machine,Improper tool usage
+Poor lighting in factory floor caused worker to trip,Poor housekeeping
+Employee fell from ladder during maintenance,Unsafe work practice
+Worker struck by toolbox while working in factory floor,Unsafe work practice
+Employee misused cutting knife during task,Improper tool usage
+Trip hazard caused by water spill in warehouse,Poor housekeeping
+Employee hit by moving ladder in warehouse,Unsafe work practice
+Worker tripped on oil spill while carrying materials,Poor housekeeping
+Worker cut hand while using cutting knife,Improper tool usage
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Worker injured due to improper use of drill machine,Improper tool usage
+Worker cut hand while using welding machine,Improper tool usage
+Employee fell from crane hook during maintenance,Unsafe work practice
+Employee hit by moving mobile scaffold in factory floor,Unsafe work practice
+Trip hazard caused by water spill in factory floor,Poor housekeeping
+Employee misused hand saw during task,Improper tool usage
+Improper stacking of boxes caused falling objects,Unsafe work practice
+Worker slipped due to uneven floor on floor,Poor housekeeping
+Worker slipped due to loose cable on floor,Poor housekeeping
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Worker slipped due to debris on floor,Poor housekeeping
+Worker tripped on uneven floor while carrying materials,Poor housekeeping
+Worker slipped due to water spill on floor,Poor housekeeping
+Employee tripped over oil spill in maintenance workshop,Poor housekeeping
+Worker tripped on loose cable while carrying materials,Poor housekeeping
+Worker tripped on loose cable while carrying materials,Poor housekeeping
+Employee hit by moving mobile scaffold in factory floor,Unsafe work practice
+Employee tripped over debris in loading dock,Poor housekeeping
+Employee tripped over scattered tools in production area,Poor housekeeping
+Worker struck by metal pipe while working in maintenance workshop,Unsafe work practice
+Worker slipped due to debris on floor,Poor housekeeping
+Employee fell from crane hook during maintenance,Unsafe work practice
+Employee tripped over debris in warehouse,Poor housekeeping
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Worker slipped due to uneven floor on floor,Poor housekeeping
+Employee misused drill machine during task,Improper tool usage
+Worker injured due to improper use of welding machine,Improper tool usage
+Poor lighting in maintenance workshop caused worker to trip,Poor housekeeping
+Worker tripped on oil spill while carrying materials,Poor housekeeping
+Worker struck by toolbox while working in warehouse,Unsafe work practice
+Trip hazard caused by oil spill in loading dock,Poor housekeeping
+Worker injured due to improper use of hand saw,Improper tool usage
+Worker slipped due to water spill on floor,Poor housekeeping
+Worker slipped due to debris on floor,Poor housekeeping
+Worker cut hand while using welding machine,Improper tool usage
+Employee fell from crane hook during maintenance,Unsafe work practice
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Worker injured while handling welding machine,Improper tool usage
+Employee slipped while walking through loading dock,Poor housekeeping
+Worker slipped due to water spill on floor,Poor housekeeping
+Worker cut hand while using drill machine,Improper tool usage
+Employee hit by moving crane hook in maintenance workshop,Unsafe work practice
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Worker injured while handling grinder,Improper tool usage
+Worker struck by falling material while working in production area,Unsafe work practice
+Worker injured due to improper use of grinder,Improper tool usage
+Employee misused welding machine during task,Improper tool usage
+Worker slipped on scattered tools near factory floor,Poor housekeeping
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Employee tripped over uneven floor in loading dock,Poor housekeeping
+Worker tripped on scattered tools while carrying materials,Poor housekeeping
+Employee tripped over oil spill in loading dock,Poor housekeeping
+Employee fell from crane hook during maintenance,Unsafe work practice
+Employee slipped while walking through production area,Poor housekeeping
+Employee hit by moving mobile scaffold in production area,Unsafe work practice
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Employee fell from crane hook during maintenance,Unsafe work practice
+Worker cut hand while using welding machine,Improper tool usage
+Worker tripped on debris while carrying materials,Poor housekeeping
+Worker cut hand while using welding machine,Improper tool usage
+Worker slipped on scattered tools near factory floor,Poor housekeeping
+Improper stacking of construction materials caused falling objects,Unsafe work practice
+Worker struck by falling material while working in production area,Unsafe work practice
+Employee hit by moving ladder in factory floor,Unsafe work practice
+Employee tripped over water spill in warehouse,Poor housekeeping
+Employee tripped over water spill in production area,Poor housekeeping
+Poor lighting in production area caused worker to trip,Poor housekeeping
+Employee hit by moving mobile scaffold in loading dock,Unsafe work practice
+Employee misused drill machine during task,Improper tool usage
+Worker cut hand while using welding machine,Improper tool usage
+Employee slipped while walking through production area,Poor housekeeping
+Employee tripped over oil spill in factory floor,Poor housekeeping
+Worker struck by falling material while working in production area,Unsafe work practice
+Employee misused welding machine during task,Improper tool usage
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Poor lighting in factory floor caused worker to trip,Poor housekeeping
+Employee fell from forklift during maintenance,Unsafe work practice
+Worker injured while handling drill machine,Improper tool usage
+Worker injured while handling hand saw,Improper tool usage
+Worker slipped due to oil spill on floor,Poor housekeeping
+Worker slipped due to uneven floor on floor,Poor housekeeping
+Employee hit by moving ladder in loading dock,Unsafe work practice
+Employee misused cutting knife during task,Improper tool usage
+Employee tripped over loose cable in maintenance workshop,Poor housekeeping
+Worker struck by toolbox while working in warehouse,Unsafe work practice
+Worker struck by falling material while working in loading dock,Unsafe work practice
+Worker struck by equipment part while working in loading dock,Unsafe work practice
+Improper stacking of pipes caused falling objects,Unsafe work practice
+Employee misused welding machine during task,Improper tool usage
+Employee misused drill machine during task,Improper tool usage
+Worker tripped on scattered tools while carrying materials,Poor housekeeping
+Worker injured due to improper use of cutting knife,Improper tool usage
+Employee fell from ladder during maintenance,Unsafe work practice
+Worker tripped on uneven floor while carrying materials,Poor housekeeping
+Worker injured due to improper use of hand saw,Improper tool usage
+Worker cut hand while using hand saw,Improper tool usage
+Employee hit by moving mobile scaffold in warehouse,Unsafe work practice
+Employee slipped while walking through loading dock,Poor housekeeping
+Worker tripped on loose cable while carrying materials,Poor housekeeping
+Trip hazard caused by water spill in warehouse,Poor housekeeping
+Worker injured due to improper use of grinder,Improper tool usage
+Worker tripped on uneven floor while carrying materials,Poor housekeeping
+Worker cut hand while using drill machine,Improper tool usage
+Employee fell from crane hook during maintenance,Unsafe work practice
+Worker cut hand while using cutting knife,Improper tool usage
+Worker cut hand while using welding machine,Improper tool usage
+Employee fell from forklift during maintenance,Unsafe work practice
+Worker cut hand while using welding machine,Improper tool usage
+Employee fell from ladder during maintenance,Unsafe work practice
+Employee tripped over debris in warehouse,Poor housekeeping
+Improper stacking of construction materials caused falling objects,Unsafe work practice
+Worker slipped due to debris on floor,Poor housekeeping
+Worker tripped on oil spill while carrying materials,Poor housekeeping
+Employee misused drill machine during task,Improper tool usage
+Worker injured while handling drill machine,Improper tool usage
+Worker cut hand while using hand saw,Improper tool usage
+Employee fell from ladder during maintenance,Unsafe work practice
+Trip hazard caused by debris in warehouse,Poor housekeeping
+Employee tripped over water spill in production area,Poor housekeeping
+Worker injured while handling welding machine,Improper tool usage
+Employee fell from crane hook during maintenance,Unsafe work practice
+Employee fell from ladder during maintenance,Unsafe work practice
+Employee hit by moving forklift in factory floor,Unsafe work practice
+Worker injured while handling drill machine,Improper tool usage
+Trip hazard caused by uneven floor in production area,Poor housekeeping
+Worker cut hand while using cutting knife,Improper tool usage
+Poor lighting in production area caused worker to trip,Poor housekeeping
+Employee tripped over debris in factory floor,Poor housekeeping
+Worker tripped on debris while carrying materials,Poor housekeeping
+Worker slipped on water spill near loading dock,Poor housekeeping
+Worker cut hand while using welding machine,Improper tool usage
+Employee hit by moving mobile scaffold in production area,Unsafe work practice
+Trip hazard caused by debris in production area,Poor housekeeping
+Employee misused cutting knife during task,Improper tool usage
+Employee tripped over scattered tools in maintenance workshop,Poor housekeeping
+Trip hazard caused by loose cable in loading dock,Poor housekeeping
+Employee misused welding machine during task,Improper tool usage
+Worker cut hand while using grinder,Improper tool usage
+Worker tripped on debris while carrying materials,Poor housekeeping
+Worker cut hand while using welding machine,Improper tool usage
+Trip hazard caused by loose cable in production area,Poor housekeeping
+Employee slipped while walking through factory floor,Poor housekeeping
+Worker struck by metal pipe while working in maintenance workshop,Unsafe work practice
+Worker tripped on oil spill while carrying materials,Poor housekeeping
+Worker cut hand while using cutting knife,Improper tool usage
+Worker tripped on debris while carrying materials,Poor housekeeping
+Employee tripped over water spill in production area,Poor housekeeping
+Poor lighting in production area caused worker to trip,Poor housekeeping
+Worker tripped on water spill while carrying materials,Poor housekeeping
+Worker slipped due to water spill on floor,Poor housekeeping
+Employee hit by moving forklift in warehouse,Unsafe work practice
+Worker slipped due to debris on floor,Poor housekeeping
+Worker cut hand while using hand saw,Improper tool usage
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Worker struck by equipment part while working in factory floor,Unsafe work practice
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Worker slipped on uneven floor near loading dock,Poor housekeeping
+Worker cut hand while using grinder,Improper tool usage
+Employee hit by moving crane hook in loading dock,Unsafe work practice
+Employee fell from forklift during maintenance,Unsafe work practice
+Worker struck by toolbox while working in production area,Unsafe work practice
+Worker slipped on scattered tools near loading dock,Poor housekeeping
+Employee hit by moving forklift in production area,Unsafe work practice
+Worker slipped on water spill near factory floor,Poor housekeeping
+Employee tripped over water spill in warehouse,Poor housekeeping
+Employee misused hand saw during task,Improper tool usage
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Worker tripped on loose cable while carrying materials,Poor housekeeping
+Employee hit by moving crane hook in loading dock,Unsafe work practice
+Worker slipped due to loose cable on floor,Poor housekeeping
+Trip hazard caused by water spill in factory floor,Poor housekeeping
+Trip hazard caused by loose cable in factory floor,Poor housekeeping
+Worker injured due to improper use of cutting knife,Improper tool usage
+Employee misused drill machine during task,Improper tool usage
+Employee misused grinder during task,Improper tool usage
+Worker cut hand while using grinder,Improper tool usage
+Worker slipped due to uneven floor on floor,Poor housekeeping
+Employee fell from ladder during maintenance,Unsafe work practice
+Improper stacking of pipes caused falling objects,Unsafe work practice
+Employee slipped while walking through factory floor,Poor housekeeping
+Employee tripped over scattered tools in warehouse,Poor housekeeping
+Improper stacking of boxes caused falling objects,Unsafe work practice
+Trip hazard caused by loose cable in loading dock,Poor housekeeping
+Trip hazard caused by water spill in warehouse,Poor housekeeping
+Worker cut hand while using drill machine,Improper tool usage
+Worker injured while handling welding machine,Improper tool usage
+Poor lighting in warehouse caused worker to trip,Poor housekeeping
+Employee slipped while walking through factory floor,Poor housekeeping
+Poor lighting in warehouse caused worker to trip,Poor housekeeping
+Employee hit by moving ladder in production area,Unsafe work practice
+Worker injured while handling drill machine,Improper tool usage
+Employee slipped while walking through factory floor,Poor housekeeping
+Employee hit by moving ladder in production area,Unsafe work practice
+Employee slipped while walking through production area,Poor housekeeping
+Employee tripped over debris in factory floor,Poor housekeeping
+Trip hazard caused by loose cable in loading dock,Poor housekeeping
+Employee tripped over debris in loading dock,Poor housekeeping
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Worker struck by falling material while working in warehouse,Unsafe work practice
+Worker slipped due to debris on floor,Poor housekeeping
+Worker cut hand while using welding machine,Improper tool usage
+Poor lighting in warehouse caused worker to trip,Poor housekeeping
+Worker slipped due to water spill on floor,Poor housekeeping
+Poor lighting in factory floor caused worker to trip,Poor housekeeping
+Worker slipped on loose cable near production area,Poor housekeeping
+Worker injured due to improper use of cutting knife,Improper tool usage
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Worker injured while handling welding machine,Improper tool usage
+Worker tripped on water spill while carrying materials,Poor housekeeping
+Employee tripped over loose cable in production area,Poor housekeeping
+Employee hit by moving forklift in maintenance workshop,Unsafe work practice
+Worker struck by falling material while working in maintenance workshop,Unsafe work practice
+Trip hazard caused by uneven floor in production area,Poor housekeeping
+Worker injured due to improper use of cutting knife,Improper tool usage
+Poor lighting in warehouse caused worker to trip,Poor housekeeping
+Trip hazard caused by loose cable in factory floor,Poor housekeeping
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Worker slipped on oil spill near loading dock,Poor housekeeping
+Employee slipped while walking through loading dock,Poor housekeeping
+Worker injured due to improper use of welding machine,Improper tool usage
+Employee fell from crane hook during maintenance,Unsafe work practice
+Employee tripped over water spill in production area,Poor housekeeping
+Trip hazard caused by debris in loading dock,Poor housekeeping
+Employee hit by moving mobile scaffold in loading dock,Unsafe work practice
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Employee fell from crane hook during maintenance,Unsafe work practice
+Worker injured while handling grinder,Improper tool usage
+Worker slipped on debris near production area,Poor housekeeping
+Employee hit by moving crane hook in production area,Unsafe work practice
+Employee misused drill machine during task,Improper tool usage
+Worker injured while handling drill machine,Improper tool usage
+Worker struck by falling material while working in maintenance workshop,Unsafe work practice
+Employee fell from ladder during maintenance,Unsafe work practice
+Employee tripped over debris in factory floor,Poor housekeeping
+Worker struck by equipment part while working in factory floor,Unsafe work practice
+Employee misused cutting knife during task,Improper tool usage
+Worker slipped on oil spill near warehouse,Poor housekeeping
+Poor lighting in warehouse caused worker to trip,Poor housekeeping
+Improper stacking of pipes caused falling objects,Unsafe work practice
+Worker struck by falling material while working in production area,Unsafe work practice
+Worker slipped on uneven floor near loading dock,Poor housekeeping
+Worker cut hand while using grinder,Improper tool usage
+Trip hazard caused by water spill in production area,Poor housekeeping
+Employee fell from crane hook during maintenance,Unsafe work practice
+Employee slipped while walking through loading dock,Poor housekeeping
+Employee slipped while walking through loading dock,Poor housekeeping
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Trip hazard caused by water spill in loading dock,Poor housekeeping
+Employee slipped while walking through loading dock,Poor housekeeping
+Trip hazard caused by uneven floor in production area,Poor housekeeping
+Poor lighting in factory floor caused worker to trip,Poor housekeeping
+Poor lighting in warehouse caused worker to trip,Poor housekeeping
+Worker cut hand while using welding machine,Improper tool usage
+Worker tripped on scattered tools while carrying materials,Poor housekeeping
+Trip hazard caused by loose cable in loading dock,Poor housekeeping
+Employee hit by moving ladder in maintenance workshop,Unsafe work practice
+Employee tripped over water spill in production area,Poor housekeeping
+Worker injured while handling cutting knife,Improper tool usage
+Worker tripped on water spill while carrying materials,Poor housekeeping
+Trip hazard caused by oil spill in production area,Poor housekeeping
+Employee fell from crane hook during maintenance,Unsafe work practice
+Improper stacking of construction materials caused falling objects,Unsafe work practice
+Employee hit by moving forklift in factory floor,Unsafe work practice
+Worker cut hand while using drill machine,Improper tool usage
+Worker struck by equipment part while working in loading dock,Unsafe work practice
+Worker cut hand while using welding machine,Improper tool usage
+Worker injured while handling cutting knife,Improper tool usage
+Worker cut hand while using welding machine,Improper tool usage
+Worker injured while handling welding machine,Improper tool usage
+Employee misused grinder during task,Improper tool usage
+Employee slipped while walking through production area,Poor housekeeping
+Worker slipped on water spill near maintenance workshop,Poor housekeeping
+Worker tripped on scattered tools while carrying materials,Poor housekeeping
+Worker injured due to improper use of grinder,Improper tool usage
+Employee tripped over water spill in maintenance workshop,Poor housekeeping
+Worker struck by toolbox while working in factory floor,Unsafe work practice
+Worker injured due to improper use of welding machine,Improper tool usage
+Employee fell from ladder during maintenance,Unsafe work practice
+Employee tripped over uneven floor in factory floor,Poor housekeeping
+Worker cut hand while using drill machine,Improper tool usage
+Worker tripped on water spill while carrying materials,Poor housekeeping
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Employee slipped while walking through production area,Poor housekeeping
+Improper stacking of boxes caused falling objects,Unsafe work practice
+Worker injured due to improper use of grinder,Improper tool usage
+Trip hazard caused by loose cable in maintenance workshop,Poor housekeeping
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Worker tripped on oil spill while carrying materials,Poor housekeeping
+Employee tripped over loose cable in production area,Poor housekeeping
+Employee hit by moving ladder in production area,Unsafe work practice
+Employee fell from crane hook during maintenance,Unsafe work practice
+Worker slipped on scattered tools near factory floor,Poor housekeeping
+Improper stacking of boxes caused falling objects,Unsafe work practice
+Employee hit by moving forklift in warehouse,Unsafe work practice
+Worker injured while handling welding machine,Improper tool usage
+Trip hazard caused by debris in production area,Poor housekeeping
+Worker cut hand while using cutting knife,Improper tool usage
+Employee fell from ladder during maintenance,Unsafe work practice
+Worker tripped on uneven floor while carrying materials,Poor housekeeping
+Worker struck by equipment part while working in factory floor,Unsafe work practice
+Worker slipped on debris near warehouse,Poor housekeeping
+Worker struck by toolbox while working in factory floor,Unsafe work practice
+Worker struck by toolbox while working in warehouse,Unsafe work practice
+Worker cut hand while using grinder,Improper tool usage
+Worker tripped on scattered tools while carrying materials,Poor housekeeping
+Trip hazard caused by scattered tools in factory floor,Poor housekeeping
+Employee tripped over loose cable in maintenance workshop,Poor housekeeping
+Worker tripped on uneven floor while carrying materials,Poor housekeeping
+Improper stacking of construction materials caused falling objects,Unsafe work practice
+Worker slipped on debris near loading dock,Poor housekeeping
+Employee misused welding machine during task,Improper tool usage
+Worker injured while handling welding machine,Improper tool usage
+Improper stacking of boxes caused falling objects,Unsafe work practice
+Worker injured due to improper use of grinder,Improper tool usage
+Worker struck by toolbox while working in maintenance workshop,Unsafe work practice
+Worker injured while handling cutting knife,Improper tool usage
+Improper stacking of construction materials caused falling objects,Unsafe work practice
+Improper stacking of construction materials caused falling objects,Unsafe work practice
+Employee tripped over uneven floor in maintenance workshop,Poor housekeeping
+Worker injured due to improper use of drill machine,Improper tool usage
+Employee hit by moving forklift in loading dock,Unsafe work practice
+Worker cut hand while using welding machine,Improper tool usage
+Employee tripped over debris in maintenance workshop,Poor housekeeping
+Worker cut hand while using cutting knife,Improper tool usage
+Employee misused hand saw during task,Improper tool usage
+Poor lighting in factory floor caused worker to trip,Poor housekeeping
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Employee tripped over scattered tools in loading dock,Poor housekeeping
+Employee misused drill machine during task,Improper tool usage
+Worker struck by metal pipe while working in warehouse,Unsafe work practice
+Worker slipped on debris near factory floor,Poor housekeeping
+Worker tripped on oil spill while carrying materials,Poor housekeeping
+Employee hit by moving mobile scaffold in maintenance workshop,Unsafe work practice
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Worker slipped on uneven floor near maintenance workshop,Poor housekeeping
+Worker slipped due to oil spill on floor,Poor housekeeping
+Worker struck by metal pipe while working in loading dock,Unsafe work practice
+Worker tripped on loose cable while carrying materials,Poor housekeeping
+Worker tripped on water spill while carrying materials,Poor housekeeping
+Worker cut hand while using welding machine,Improper tool usage
+Worker slipped due to loose cable on floor,Poor housekeeping
+Improper stacking of pipes caused falling objects,Unsafe work practice
+Worker cut hand while using hand saw,Improper tool usage
+Worker slipped on debris near warehouse,Poor housekeeping
+Worker slipped on oil spill near production area,Poor housekeeping
+Employee slipped while walking through warehouse,Poor housekeeping
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Trip hazard caused by water spill in maintenance workshop,Poor housekeeping
+Worker injured while handling cutting knife,Improper tool usage
+Worker slipped on uneven floor near factory floor,Poor housekeeping
+Worker struck by toolbox while working in loading dock,Unsafe work practice
+Improper stacking of pipes caused falling objects,Unsafe work practice
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Trip hazard caused by scattered tools in warehouse,Poor housekeeping
+Employee slipped while walking through factory floor,Poor housekeeping
+Worker tripped on scattered tools while carrying materials,Poor housekeeping
+Employee tripped over oil spill in production area,Poor housekeeping
+Employee slipped while walking through production area,Poor housekeeping
+Trip hazard caused by loose cable in factory floor,Poor housekeeping
+Employee hit by moving ladder in production area,Unsafe work practice
+Worker slipped due to loose cable on floor,Poor housekeeping
+Trip hazard caused by scattered tools in factory floor,Poor housekeeping
+Worker tripped on scattered tools while carrying materials,Poor housekeeping
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Employee hit by moving forklift in loading dock,Unsafe work practice
+Employee hit by moving ladder in factory floor,Unsafe work practice
+Employee tripped over scattered tools in production area,Poor housekeeping
+Worker struck by equipment part while working in loading dock,Unsafe work practice
+Employee slipped while walking through warehouse,Poor housekeeping
+Worker struck by falling material while working in production area,Unsafe work practice
+Worker struck by toolbox while working in loading dock,Unsafe work practice
+Employee hit by moving mobile scaffold in maintenance workshop,Unsafe work practice
+Poor lighting in factory floor caused worker to trip,Poor housekeeping
+Improper stacking of pipes caused falling objects,Unsafe work practice
+Employee hit by moving forklift in warehouse,Unsafe work practice
+Employee fell from forklift during maintenance,Unsafe work practice
+Employee hit by moving mobile scaffold in warehouse,Unsafe work practice
+Employee slipped while walking through factory floor,Poor housekeeping
+Worker cut hand while using welding machine,Improper tool usage
+Worker slipped due to oil spill on floor,Poor housekeeping
+Worker struck by falling material while working in production area,Unsafe work practice
+Worker struck by equipment part while working in production area,Unsafe work practice
+Worker tripped on debris while carrying materials,Poor housekeeping
+Worker struck by metal pipe while working in loading dock,Unsafe work practice
+Employee misused welding machine during task,Improper tool usage
+Improper stacking of construction materials caused falling objects,Unsafe work practice
+Employee slipped while walking through loading dock,Poor housekeeping
+Employee hit by moving mobile scaffold in warehouse,Unsafe work practice
+Worker slipped due to uneven floor on floor,Poor housekeeping
+Worker tripped on uneven floor while carrying materials,Poor housekeeping
+Poor lighting in maintenance workshop caused worker to trip,Poor housekeeping
+Employee hit by moving ladder in production area,Unsafe work practice
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Worker injured while handling welding machine,Improper tool usage
+Worker tripped on uneven floor while carrying materials,Poor housekeeping
+Worker injured while handling hand saw,Improper tool usage
+Employee fell from forklift during maintenance,Unsafe work practice
+Worker struck by toolbox while working in warehouse,Unsafe work practice
+Worker struck by toolbox while working in factory floor,Unsafe work practice
+Poor lighting in factory floor caused worker to trip,Poor housekeeping
+Worker slipped on uneven floor near warehouse,Poor housekeeping
+Worker struck by falling material while working in loading dock,Unsafe work practice
+Worker injured while handling drill machine,Improper tool usage
+Worker injured while handling grinder,Improper tool usage
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Worker struck by metal pipe while working in production area,Unsafe work practice
+Employee misused drill machine during task,Improper tool usage
+Employee tripped over loose cable in production area,Poor housekeeping
+Employee hit by moving crane hook in production area,Unsafe work practice
+Improper stacking of boxes caused falling objects,Unsafe work practice
+Employee misused hand saw during task,Improper tool usage
+Worker injured due to improper use of grinder,Improper tool usage
+Worker injured due to improper use of welding machine,Improper tool usage
+Employee fell from ladder during maintenance,Unsafe work practice
+Worker struck by equipment part while working in factory floor,Unsafe work practice
+Employee slipped while walking through production area,Poor housekeeping
+Trip hazard caused by water spill in maintenance workshop,Poor housekeeping
+Employee tripped over uneven floor in factory floor,Poor housekeeping
+Worker injured due to improper use of welding machine,Improper tool usage
+Worker slipped on water spill near production area,Poor housekeeping
+Trip hazard caused by oil spill in warehouse,Poor housekeeping
+Worker slipped on scattered tools near warehouse,Poor housekeeping
+Employee slipped while walking through production area,Poor housekeeping
+Worker injured due to improper use of drill machine,Improper tool usage
+Worker slipped due to loose cable on floor,Poor housekeeping
+Poor lighting in warehouse caused worker to trip,Poor housekeeping
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Worker injured due to improper use of cutting knife,Improper tool usage
+Worker injured due to improper use of hand saw,Improper tool usage
+Employee hit by moving mobile scaffold in maintenance workshop,Unsafe work practice
+Employee slipped while walking through loading dock,Poor housekeeping
+Worker injured while handling cutting knife,Improper tool usage
+Employee tripped over oil spill in factory floor,Poor housekeeping
+Worker injured while handling hand saw,Improper tool usage
+Employee fell from forklift during maintenance,Unsafe work practice
+Employee slipped while walking through loading dock,Poor housekeeping
+Worker tripped on scattered tools while carrying materials,Poor housekeeping
+Worker injured while handling cutting knife,Improper tool usage
+Employee misused hand saw during task,Improper tool usage
+Worker struck by equipment part while working in warehouse,Unsafe work practice
+Employee hit by moving crane hook in production area,Unsafe work practice
+Worker slipped on oil spill near maintenance workshop,Poor housekeeping
+Worker slipped on uneven floor near maintenance workshop,Poor housekeeping
+Worker struck by equipment part while working in production area,Unsafe work practice
+Worker tripped on loose cable while carrying materials,Poor housekeeping
+Worker tripped on scattered tools while carrying materials,Poor housekeeping
+Employee misused cutting knife during task,Improper tool usage
+Poor lighting in factory floor caused worker to trip,Poor housekeeping
+Worker cut hand while using welding machine,Improper tool usage
+Employee tripped over oil spill in factory floor,Poor housekeeping
+Improper stacking of boxes caused falling objects,Unsafe work practice
+Employee hit by moving ladder in production area,Unsafe work practice
+Employee tripped over loose cable in loading dock,Poor housekeeping
+Trip hazard caused by loose cable in factory floor,Poor housekeeping
+Worker slipped on scattered tools near maintenance workshop,Poor housekeeping
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Employee fell from ladder during maintenance,Unsafe work practice
+Employee slipped while walking through factory floor,Poor housekeeping
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Employee fell from crane hook during maintenance,Unsafe work practice
+Employee tripped over loose cable in factory floor,Poor housekeeping
+Trip hazard caused by scattered tools in factory floor,Poor housekeeping
+Worker slipped on debris near factory floor,Poor housekeeping
+Employee tripped over oil spill in factory floor,Poor housekeeping
+Worker injured due to improper use of welding machine,Improper tool usage
+Worker slipped due to scattered tools on floor,Poor housekeeping
+Poor lighting in factory floor caused worker to trip,Poor housekeeping
+Employee slipped while walking through production area,Poor housekeeping
+Worker tripped on debris while carrying materials,Poor housekeeping
+Worker slipped on loose cable near loading dock,Poor housekeeping
+Employee tripped over scattered tools in warehouse,Poor housekeeping
+Employee tripped over scattered tools in maintenance workshop,Poor housekeeping
+Worker struck by metal pipe while working in loading dock,Unsafe work practice
+Worker injured due to improper use of drill machine,Improper tool usage
+Worker slipped on loose cable near factory floor,Poor housekeeping
+Worker struck by metal pipe while working in maintenance workshop,Unsafe work practice
+Worker tripped on debris while carrying materials,Poor housekeeping
+Employee fell from forklift during maintenance,Unsafe work practice
+Worker cut hand while using welding machine,Improper tool usage
+Worker injured while handling grinder,Improper tool usage
+Worker injured due to improper use of cutting knife,Improper tool usage
+Worker injured while handling welding machine,Improper tool usage
+Employee slipped while walking through production area,Poor housekeeping
+Employee tripped over oil spill in maintenance workshop,Poor housekeeping
+Worker slipped due to uneven floor on floor,Poor housekeeping
+Worker struck by equipment part while working in loading dock,Unsafe work practice
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Worker tripped on uneven floor while carrying materials,Poor housekeeping
+Worker injured while handling grinder,Improper tool usage
+Worker slipped due to loose cable on floor,Poor housekeeping
+Worker cut hand while using grinder,Improper tool usage
+Worker slipped on oil spill near warehouse,Poor housekeeping
+Employee tripped over water spill in factory floor,Poor housekeeping
+Trip hazard caused by water spill in warehouse,Poor housekeeping
+Employee fell from crane hook during maintenance,Unsafe work practice
+Worker injured due to improper use of welding machine,Improper tool usage
+Improper stacking of boxes caused falling objects,Unsafe work practice
+Worker cut hand while using grinder,Improper tool usage
+Poor lighting in factory floor caused worker to trip,Poor housekeeping
+Worker struck by metal pipe while working in loading dock,Unsafe work practice
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Poor lighting in warehouse caused worker to trip,Poor housekeeping
+Worker cut hand while using cutting knife,Improper tool usage
+Worker tripped on water spill while carrying materials,Poor housekeeping
+Employee misused drill machine during task,Improper tool usage
+Trip hazard caused by oil spill in maintenance workshop,Poor housekeeping
+Employee slipped while walking through warehouse,Poor housekeeping
+Employee misused drill machine during task,Improper tool usage
+Worker tripped on oil spill while carrying materials,Poor housekeeping
+Employee slipped while walking through loading dock,Poor housekeeping
+Worker slipped due to water spill on floor,Poor housekeeping
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Employee misused grinder during task,Improper tool usage
+Employee hit by moving forklift in warehouse,Unsafe work practice
+Improper stacking of pipes caused falling objects,Unsafe work practice
+Worker struck by equipment part while working in factory floor,Unsafe work practice
+Employee slipped while walking through factory floor,Poor housekeeping
+Employee tripped over uneven floor in loading dock,Poor housekeeping
+Worker injured due to improper use of grinder,Improper tool usage
+Employee fell from crane hook during maintenance,Unsafe work practice
+Trip hazard caused by scattered tools in factory floor,Poor housekeeping
+Employee misused grinder during task,Improper tool usage
+Worker injured due to improper use of hand saw,Improper tool usage
+Worker slipped on uneven floor near maintenance workshop,Poor housekeeping
+Employee slipped while walking through loading dock,Poor housekeeping
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Worker struck by toolbox while working in warehouse,Unsafe work practice
+Worker slipped on loose cable near factory floor,Poor housekeeping
+Employee hit by moving ladder in loading dock,Unsafe work practice
+Employee misused hand saw during task,Improper tool usage
+Poor lighting in factory floor caused worker to trip,Poor housekeeping
+Worker cut hand while using welding machine,Improper tool usage
+Worker struck by falling material while working in warehouse,Unsafe work practice
+Employee slipped while walking through warehouse,Poor housekeeping
+Trip hazard caused by scattered tools in loading dock,Poor housekeeping
+Employee tripped over water spill in maintenance workshop,Poor housekeeping
+Worker injured due to improper use of welding machine,Improper tool usage
+Worker injured while handling cutting knife,Improper tool usage
+Employee slipped while walking through factory floor,Poor housekeeping
+Worker cut hand while using hand saw,Improper tool usage
+Worker slipped on loose cable near production area,Poor housekeeping
+Employee slipped while walking through factory floor,Poor housekeeping
+Employee slipped while walking through loading dock,Poor housekeeping
+Poor lighting in factory floor caused worker to trip,Poor housekeeping
+Worker cut hand while using cutting knife,Improper tool usage
+Worker cut hand while using drill machine,Improper tool usage
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Worker tripped on water spill while carrying materials,Poor housekeeping
+Worker slipped on scattered tools near production area,Poor housekeeping
+Employee slipped while walking through loading dock,Poor housekeeping
+Worker slipped on uneven floor near warehouse,Poor housekeeping
+Worker tripped on oil spill while carrying materials,Poor housekeeping
+Worker struck by toolbox while working in loading dock,Unsafe work practice
+Trip hazard caused by water spill in maintenance workshop,Poor housekeeping
+Worker injured while handling welding machine,Improper tool usage
+Worker injured while handling hand saw,Improper tool usage
+Worker struck by falling material while working in warehouse,Unsafe work practice
+Trip hazard caused by uneven floor in production area,Poor housekeeping
+Employee misused cutting knife during task,Improper tool usage
+Employee slipped while walking through factory floor,Poor housekeeping
+Employee tripped over loose cable in production area,Poor housekeeping
+Trip hazard caused by scattered tools in warehouse,Poor housekeeping
+Employee fell from forklift during maintenance,Unsafe work practice
+Worker struck by metal pipe while working in factory floor,Unsafe work practice
+Worker tripped on uneven floor while carrying materials,Poor housekeeping
+Trip hazard caused by uneven floor in production area,Poor housekeeping
+Worker slipped on oil spill near production area,Poor housekeeping
+Worker tripped on oil spill while carrying materials,Poor housekeeping
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Worker slipped due to water spill on floor,Poor housekeeping
+Employee hit by moving mobile scaffold in maintenance workshop,Unsafe work practice
+Employee tripped over water spill in factory floor,Poor housekeeping
+Worker injured due to improper use of hand saw,Improper tool usage
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Trip hazard caused by scattered tools in warehouse,Poor housekeeping
+Employee hit by moving mobile scaffold in loading dock,Unsafe work practice
+Worker struck by falling material while working in production area,Unsafe work practice
+Poor lighting in warehouse caused worker to trip,Poor housekeeping
+Worker cut hand while using drill machine,Improper tool usage
+Employee misused hand saw during task,Improper tool usage
+Employee tripped over loose cable in production area,Poor housekeeping
+Worker injured due to improper use of hand saw,Improper tool usage
+Worker injured due to improper use of welding machine,Improper tool usage
+Employee tripped over uneven floor in maintenance workshop,Poor housekeeping
+Worker tripped on uneven floor while carrying materials,Poor housekeeping
+Employee tripped over oil spill in production area,Poor housekeeping
+Employee hit by moving ladder in maintenance workshop,Unsafe work practice
+Worker cut hand while using cutting knife,Improper tool usage
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Employee hit by moving forklift in loading dock,Unsafe work practice
+Worker struck by falling material while working in warehouse,Unsafe work practice
+Worker injured while handling cutting knife,Improper tool usage
+Worker tripped on oil spill while carrying materials,Poor housekeeping
+Employee slipped while walking through factory floor,Poor housekeeping
+Employee slipped while walking through loading dock,Poor housekeeping
+Worker slipped due to water spill on floor,Poor housekeeping
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Improper stacking of construction materials caused falling objects,Unsafe work practice
+Worker slipped due to uneven floor on floor,Poor housekeeping
+Worker slipped due to oil spill on floor,Poor housekeeping
+Worker tripped on oil spill while carrying materials,Poor housekeeping
+Employee slipped while walking through production area,Poor housekeeping
+Employee slipped while walking through production area,Poor housekeeping
+Worker cut hand while using drill machine,Improper tool usage
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Employee hit by moving mobile scaffold in maintenance workshop,Unsafe work practice
+Improper stacking of boxes caused falling objects,Unsafe work practice
+Worker injured due to improper use of welding machine,Improper tool usage
+Worker injured due to improper use of hand saw,Improper tool usage
+Worker slipped on debris near factory floor,Poor housekeeping
+Worker injured due to improper use of grinder,Improper tool usage
+Poor lighting in warehouse caused worker to trip,Poor housekeeping
+Trip hazard caused by loose cable in production area,Poor housekeeping
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Worker cut hand while using grinder,Improper tool usage
+Worker injured due to improper use of welding machine,Improper tool usage
+Poor lighting in maintenance workshop caused worker to trip,Poor housekeeping
+Employee slipped while walking through warehouse,Poor housekeeping
+Employee tripped over uneven floor in warehouse,Poor housekeeping
+Improper stacking of construction materials caused falling objects,Unsafe work practice
+Employee fell from crane hook during maintenance,Unsafe work practice
+Employee slipped while walking through production area,Poor housekeeping
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Poor lighting in production area caused worker to trip,Poor housekeeping
+Worker injured while handling hand saw,Improper tool usage
+Employee hit by moving mobile scaffold in loading dock,Unsafe work practice
+Worker cut hand while using cutting knife,Improper tool usage
+Worker tripped on loose cable while carrying materials,Poor housekeeping
+Employee fell from forklift during maintenance,Unsafe work practice
+Trip hazard caused by water spill in factory floor,Poor housekeeping
+Employee slipped while walking through factory floor,Poor housekeeping
+Worker cut hand while using welding machine,Improper tool usage
+Improper stacking of boxes caused falling objects,Unsafe work practice
+Employee hit by moving mobile scaffold in maintenance workshop,Unsafe work practice
+Employee hit by moving mobile scaffold in factory floor,Unsafe work practice
+Worker struck by equipment part while working in warehouse,Unsafe work practice
+Worker injured while handling hand saw,Improper tool usage
+Employee tripped over oil spill in maintenance workshop,Poor housekeeping
+Worker tripped on scattered tools while carrying materials,Poor housekeeping
+Worker struck by equipment part while working in loading dock,Unsafe work practice
+Employee hit by moving forklift in maintenance workshop,Unsafe work practice
+Worker struck by toolbox while working in warehouse,Unsafe work practice
+Worker slipped due to scattered tools on floor,Poor housekeeping
+Worker slipped on oil spill near factory floor,Poor housekeeping
+Improper stacking of pipes caused falling objects,Unsafe work practice
+Worker injured due to improper use of grinder,Improper tool usage
+Improper stacking of pipes caused falling objects,Unsafe work practice
+Employee hit by moving forklift in production area,Unsafe work practice
+Worker injured due to improper use of cutting knife,Improper tool usage
+Worker injured while handling welding machine,Improper tool usage
+Employee tripped over oil spill in maintenance workshop,Poor housekeeping
+Worker tripped on uneven floor while carrying materials,Poor housekeeping
+Worker slipped due to uneven floor on floor,Poor housekeeping
+Worker struck by toolbox while working in factory floor,Unsafe work practice
+Employee tripped over uneven floor in maintenance workshop,Poor housekeeping
+Worker cut hand while using grinder,Improper tool usage
+Worker injured due to improper use of cutting knife,Improper tool usage
+Worker slipped due to loose cable on floor,Poor housekeeping
+Worker injured while handling drill machine,Improper tool usage
+Worker cut hand while using drill machine,Improper tool usage
+Employee slipped while walking through factory floor,Poor housekeeping
+Worker slipped on loose cable near warehouse,Poor housekeeping
+Employee fell from crane hook during maintenance,Unsafe work practice
+Worker slipped due to scattered tools on floor,Poor housekeeping
+Worker cut hand while using cutting knife,Improper tool usage
+Worker injured while handling hand saw,Improper tool usage
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Worker tripped on debris while carrying materials,Poor housekeeping
+Employee hit by moving mobile scaffold in loading dock,Unsafe work practice
+Trip hazard caused by water spill in warehouse,Poor housekeeping
+Worker cut hand while using cutting knife,Improper tool usage
+Employee tripped over oil spill in maintenance workshop,Poor housekeeping
+Employee slipped while walking through loading dock,Poor housekeeping
+Worker struck by falling material while working in maintenance workshop,Unsafe work practice
+Employee slipped while walking through production area,Poor housekeeping
+Poor lighting in factory floor caused worker to trip,Poor housekeeping
+Employee hit by moving mobile scaffold in loading dock,Unsafe work practice
+Worker injured while handling grinder,Improper tool usage
+Employee hit by moving ladder in warehouse,Unsafe work practice
+Worker tripped on oil spill while carrying materials,Poor housekeeping
+Worker tripped on scattered tools while carrying materials,Poor housekeeping
+Employee tripped over scattered tools in maintenance workshop,Poor housekeeping
+Employee tripped over debris in maintenance workshop,Poor housekeeping
+Employee hit by moving forklift in warehouse,Unsafe work practice
+Worker cut hand while using hand saw,Improper tool usage
+Worker tripped on water spill while carrying materials,Poor housekeeping
+Worker tripped on debris while carrying materials,Poor housekeeping
+Worker injured while handling welding machine,Improper tool usage
+Worker slipped on water spill near production area,Poor housekeeping
+Employee misused cutting knife during task,Improper tool usage
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Employee hit by moving forklift in loading dock,Unsafe work practice
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Employee slipped while walking through loading dock,Poor housekeeping
+Employee hit by moving mobile scaffold in factory floor,Unsafe work practice
+Worker cut hand while using grinder,Improper tool usage
+Worker tripped on water spill while carrying materials,Poor housekeeping
+Worker injured due to improper use of drill machine,Improper tool usage
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Poor lighting in maintenance workshop caused worker to trip,Poor housekeeping
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Worker injured while handling grinder,Improper tool usage
+Employee fell from crane hook during maintenance,Unsafe work practice
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Worker injured while handling drill machine,Improper tool usage
+Employee misused cutting knife during task,Improper tool usage
+Worker slipped due to uneven floor on floor,Poor housekeeping
+Employee tripped over debris in warehouse,Poor housekeeping
+Worker tripped on oil spill while carrying materials,Poor housekeeping
+Worker slipped on debris near loading dock,Poor housekeeping
+Worker injured due to improper use of cutting knife,Improper tool usage
+Employee misused welding machine during task,Improper tool usage
+Worker injured due to improper use of hand saw,Improper tool usage
+Worker slipped on debris near factory floor,Poor housekeeping
+Worker slipped on oil spill near loading dock,Poor housekeeping
+Employee hit by moving mobile scaffold in warehouse,Unsafe work practice
+Employee fell from ladder during maintenance,Unsafe work practice
+Poor lighting in production area caused worker to trip,Poor housekeeping
+Worker struck by falling material while working in factory floor,Unsafe work practice
+Worker injured due to improper use of hand saw,Improper tool usage
+Employee fell from forklift during maintenance,Unsafe work practice
+Employee hit by moving mobile scaffold in loading dock,Unsafe work practice
+Employee fell from crane hook during maintenance,Unsafe work practice
+Worker slipped on loose cable near loading dock,Poor housekeeping
+Worker cut hand while using welding machine,Improper tool usage
+Worker cut hand while using drill machine,Improper tool usage
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Worker slipped due to debris on floor,Poor housekeeping
+Trip hazard caused by scattered tools in warehouse,Poor housekeeping
+Worker slipped due to oil spill on floor,Poor housekeeping
+Worker cut hand while using cutting knife,Improper tool usage
+Worker injured due to improper use of welding machine,Improper tool usage
+Employee misused cutting knife during task,Improper tool usage
+Worker cut hand while using grinder,Improper tool usage
+Worker slipped on oil spill near production area,Poor housekeeping
+Trip hazard caused by debris in warehouse,Poor housekeeping
+Improper stacking of construction materials caused falling objects,Unsafe work practice
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Worker injured due to improper use of grinder,Improper tool usage
+Poor lighting in production area caused worker to trip,Poor housekeeping
+Worker injured due to improper use of cutting knife,Improper tool usage
+Worker injured while handling drill machine,Improper tool usage
+Improper stacking of construction materials caused falling objects,Unsafe work practice
+Worker slipped on loose cable near warehouse,Poor housekeeping
+Worker struck by toolbox while working in loading dock,Unsafe work practice
+Employee tripped over water spill in production area,Poor housekeeping
+Worker injured while handling hand saw,Improper tool usage
+Worker injured due to improper use of cutting knife,Improper tool usage
+Trip hazard caused by uneven floor in production area,Poor housekeeping
+Poor lighting in maintenance workshop caused worker to trip,Poor housekeeping
+Worker struck by equipment part while working in warehouse,Unsafe work practice
+Employee misused cutting knife during task,Improper tool usage
+Worker tripped on loose cable while carrying materials,Poor housekeeping
+Employee hit by moving forklift in maintenance workshop,Unsafe work practice
+Employee tripped over scattered tools in loading dock,Poor housekeeping
+Trip hazard caused by oil spill in maintenance workshop,Poor housekeeping
+Employee misused cutting knife during task,Improper tool usage
+Worker tripped on water spill while carrying materials,Poor housekeeping
+Worker injured due to improper use of hand saw,Improper tool usage
+Improper stacking of boxes caused falling objects,Unsafe work practice
+Trip hazard caused by uneven floor in factory floor,Poor housekeeping
+Worker slipped on water spill near production area,Poor housekeeping
+Worker tripped on oil spill while carrying materials,Poor housekeeping
+Worker tripped on loose cable while carrying materials,Poor housekeeping
+Worker injured while handling welding machine,Improper tool usage
+Trip hazard caused by loose cable in factory floor,Poor housekeeping
+Worker struck by falling material while working in production area,Unsafe work practice
+Employee misused welding machine during task,Improper tool usage
+Poor lighting in maintenance workshop caused worker to trip,Poor housekeeping
+Worker slipped on scattered tools near production area,Poor housekeeping
+Poor lighting in production area caused worker to trip,Poor housekeeping
+Trip hazard caused by water spill in maintenance workshop,Poor housekeeping
+Employee misused welding machine during task,Improper tool usage
+Worker tripped on debris while carrying materials,Poor housekeeping
+Worker slipped on debris near warehouse,Poor housekeeping
+Employee fell from mobile scaffold during maintenance,Unsafe work practice
+Worker injured due to improper use of grinder,Improper tool usage
+Employee hit by moving crane hook in production area,Unsafe work practice
+Worker injured while handling grinder,Improper tool usage
+Worker slipped due to scattered tools on floor,Poor housekeeping
+Poor lighting in production area caused worker to trip,Poor housekeeping
+Employee tripped over water spill in maintenance workshop,Poor housekeeping
+Worker slipped due to oil spill on floor,Poor housekeeping
+Improper stacking of pipes caused falling objects,Unsafe work practice
+Employee fell from forklift during maintenance,Unsafe work practice
+Worker injured while handling grinder,Improper tool usage
+Worker injured while handling grinder,Improper tool usage
+Employee slipped while walking through production area,Poor housekeeping
+Improper stacking of pipes caused falling objects,Unsafe work practice
+Improper stacking of construction materials caused falling objects,Unsafe work practice
+Trip hazard caused by uneven floor in maintenance workshop,Poor housekeeping
+Employee fell from forklift during maintenance,Unsafe work practice
+Trip hazard caused by loose cable in warehouse,Poor housekeeping
+Poor lighting in production area caused worker to trip,Poor housekeeping
+Trip hazard caused by water spill in loading dock,Poor housekeeping
+Employee tripped over oil spill in production area,Poor housekeeping
+Worker cut hand while using drill machine,Improper tool usage
+Employee slipped while walking through factory floor,Poor housekeeping
+Worker tripped on uneven floor while carrying materials,Poor housekeeping
+Trip hazard caused by oil spill in factory floor,Poor housekeeping
+Worker injured due to improper use of cutting knife,Improper tool usage
+Worker slipped on debris near maintenance workshop,Poor housekeeping
+Employee misused welding machine during task,Improper tool usage
+Improper stacking of metal sheets caused falling objects,Unsafe work practice
+Worker slipped due to water spill on floor,Poor housekeeping
+Worker struck by metal pipe while working in warehouse,Unsafe work practice
+Employee tripped over scattered tools in loading dock,Poor housekeeping
+Poor lighting in loading dock caused worker to trip,Poor housekeeping
+Employee tripped over debris in production area,Poor housekeeping
+Trip hazard caused by water spill in production area,Poor housekeeping
+Worker tripped on debris while carrying materials,Poor housekeeping
+Employee slipped while walking through maintenance workshop,Poor housekeeping
+Trip hazard caused by loose cable in maintenance workshop,Poor housekeeping
