@@ -60,19 +60,19 @@ if st.button("Analyze Incident"):
             st.success(root_cause)
 
             # -----------------------------
-            # RISK ASSESSMENT
             # -----------------------------
-            likelihood, severity, risk_score = calculate_risk(root_cause)
+# RISK ASSESSMENT
+# -----------------------------
+likelihood, severity, risk_score, level = calculate_risk(root_cause)
 
-            st.subheader("⚠ Risk Assessment")
+st.subheader("⚠ Risk Assessment")
 
-            col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
-            col1.metric("Likelihood", likelihood)
-            col2.metric("Severity", severity)
-            col3.metric("Risk Score", risk_score)
-
-            # -----------------------------
+col1.metric("Likelihood", likelihood)
+col2.metric("Severity", severity)
+col3.metric("Risk Score", risk_score)
+col4.metric("Risk Level", level)
             # RISK MATRIX CHART
             # -----------------------------
             st.subheader("Risk Matrix")
