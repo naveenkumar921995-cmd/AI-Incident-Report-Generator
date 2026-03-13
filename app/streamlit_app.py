@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 # Add project root directory to Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+# Import modules
 from src.root_cause_predictor import predict_root_cause
 from src.report_generator import generate_report
 from src.recommendation_engine import recommend_actions
@@ -24,19 +25,41 @@ st.set_page_config(
 )
 
 # -----------------------------
-# CUSTOM STYLE
+# CUSTOM CSS (UI IMPROVEMENT)
 # -----------------------------
 st.markdown("""
 <style>
 
-.main-title {
-    font-size:30px;
-    font-weight:700;
+/* Reduce top padding */
+.block-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-.small-text {
-    font-size:14px;
-    color:gray;
+/* Main title styling */
+.main-title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Subtitle styling */
+.subtitle {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Reduce metric size */
+[data-testid="stMetricValue"] {
+    font-size: 22px;
+}
+
+[data-testid="stMetricLabel"] {
+    font-size: 14px;
+}
+
+/* General text size */
+.stMarkdown p {
+    font-size: 14px;
 }
 
 </style>
@@ -46,11 +69,17 @@ st.markdown("""
 # -----------------------------
 # HEADER
 # -----------------------------
-st.markdown('<p class="main-title">🛠 AI Incident Investigation Assistant</p>', unsafe_allow_html=True)
-st.markdown('<p class="small-text">Machine Learning Powered Root Cause Analysis System</p>', unsafe_allow_html=True)
+st.markdown(
+    '<p class="main-title">🛠 AI Incident Investigation Assistant</p>',
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    '<p class="subtitle">Machine Learning Powered Root Cause Analysis System</p>',
+    unsafe_allow_html=True
+)
 
 st.divider()
-
 
 # -----------------------------
 # INCIDENT INPUT
@@ -64,7 +93,7 @@ description = st.text_area(
 )
 
 # -----------------------------
-# ANALYZE BUTTON
+# ANALYZE INCIDENT
 # -----------------------------
 if st.button("Analyze Incident"):
 
@@ -75,9 +104,7 @@ if st.button("Analyze Incident"):
 
         with st.spinner("Analyzing incident with AI..."):
 
-            # -----------------------------
-            # ROOT CAUSE PREDICTION
-            # -----------------------------
+            # Root Cause Prediction
             root_cause = predict_root_cause(description)
 
             st.subheader("Predicted Root Cause")
@@ -102,7 +129,7 @@ if st.button("Analyze Incident"):
             # -----------------------------
             st.subheader("Risk Matrix")
 
-            fig, ax = plt.subplots(figsize=(5,4))
+            fig, ax = plt.subplots(figsize=(4,3))
 
             matrix = [
                 [1,2,3,4,5],
@@ -153,7 +180,7 @@ if st.button("Analyze Incident"):
             st.text_area(
                 "Investigation Report",
                 report,
-                height=250
+                height=220
             )
 
             # -----------------------------
@@ -164,7 +191,6 @@ if st.button("Analyze Incident"):
                 file = export_to_word(report)
 
                 st.success(f"Report Generated: {file}")
-
 
 # -----------------------------
 # ANALYTICS DASHBOARD
@@ -179,7 +205,7 @@ try:
 
     st.bar_chart(
         data["root_cause"].value_counts(),
-        height=300
+        height=280
     )
 
 except:
