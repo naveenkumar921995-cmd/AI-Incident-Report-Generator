@@ -1,40 +1,44 @@
 from src.safety_standards import get_safety_standard
+from src.capa_engine import generate_capa
 
 def generate_report(description, root_cause):
 
     standard = get_safety_standard(root_cause)
 
-    violation_code = standard["violation_code"]
-    violation_desc = standard["description"]
+    capa = generate_capa(root_cause)
 
     report = f"""
-Incident Investigation Report
+AI INCIDENT INVESTIGATION REPORT
 --------------------------------
 
-Incident Description:
+Incident Description
 {description}
 
-Root Cause:
+Root Cause
 {root_cause}
 
-Safety Standard Violation:
-{violation_code}
+Safety Standard Violation
+Code: {standard['violation_code']}
+Standard: {standard['standard']}
 
-Violation Description:
-{violation_desc}
+Corrective Action
+{capa['corrective']}
 
-Immediate Cause:
-Unsafe condition detected during task.
+Preventive Action
+{capa['preventive']}
 
-Corrective Actions:
-• Improve workplace inspection
-• Conduct safety training
-• Implement preventive controls
+Monitoring Indexes
+• Incident Frequency Rate
+• Near Miss Reporting Rate
+• Corrective Action Closure Rate
+• PPE Compliance Monitoring
 
-Conclusion:
-Incident occurred due to {root_cause}.
-This violates safety standard {violation_code}.
-Preventive actions must be implemented.
+Appendix E – CAPA Guidance
+Hierarchy of Controls Applied
+1. Elimination
+2. Engineering Control
+3. Administrative Control
+4. PPE
 """
 
     return report
