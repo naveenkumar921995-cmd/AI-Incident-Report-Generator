@@ -1,13 +1,14 @@
-def predict_severity(risk_score):
+def predict_severity(root_cause):
 
-    if risk_score <= 4:
-        return "Minor"
+    severity_map = {
 
-    elif risk_score <= 9:
-        return "Moderate"
+        "Poor housekeeping": 2,
+        "Improper tool usage": 3,
+        "Inadequate workplace lighting": 2,
+        "PPE violation": 4,
+        "Equipment failure": 4,
+        "Unsafe act": 3
 
-    elif risk_score <= 16:
-        return "Major"
+    }
 
-    else:
-        return "Critical"
+    return severity_map.get(root_cause, 2)
