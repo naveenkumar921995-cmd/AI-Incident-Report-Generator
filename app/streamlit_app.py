@@ -3,6 +3,9 @@ import sys
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
+import plotly.express as px
+import cv2
 
 # Add project root directory
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -15,6 +18,8 @@ from src.risk_matrix import calculate_risk
 from src.incident_classifier import classify_incident
 from src.severity_predictor import predict_severity
 from src.capa_generator import generate_capa
+from src.trend_prediction import predict_trend
+from src.hazard_detector import detect_hazard
 from utils.document_exporter import export_to_word
 
 
@@ -28,10 +33,42 @@ st.set_page_config(
 )
 
 # ----------------------------------------------------
+# ENTERPRISE STYLE CSS
+# ----------------------------------------------------
+def load_css():
+    css_file = os.path.join(os.path.dirname(__file__), "style.css")
+    if os.path.exists(css_file):
+        with open(css_file) as f:
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+load_css()
+
+
+# ----------------------------------------------------
 # HEADER
 # ----------------------------------------------------
 st.title("🛠 AI Incident Investigation Assistant")
-st.caption("AI Powered Safety Investigation & Root Cause Analysis System")
+st.caption("AI Powered Safety Investigation & Root Cause Analysis Platform")
+
+st.divider()
+
+# ----------------------------------------------------
+# IMAGE HAZARD DETECTION
+# ----------------------------------------------------
+st.subheader("🧠 Hazard Detection from Image")
+
+uploaded_file = st.file_uploader("Upload Incident Image", type=["jpg","png","jpeg"])
+
+if uploaded_file:
+
+    file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
+    image = cv2.imdecode(file_bytes, 1)
+
+    st.image(image, caption="Uploaded Image", use_column_width=True)
+
+    hazard = detect_hazard(image)
+
+    st.warning(hazard)
 
 st.divider()
 
@@ -56,33 +93,25 @@ if st.button("Analyze Incident"):
 
         with st.spinner("Analyzing incident using AI models..."):
 
-            # ------------------------------
-            # ROOT CAUSE PREDICTION
-            # ------------------------------
+            # Root Cause
             root_cause = predict_root_cause(description)
 
             st.subheader("Predicted Root Cause")
             st.success(root_cause)
 
-            # ------------------------------
-            # INCIDENT CLASSIFICATION
-            # ------------------------------
+            # Incident Classification
             incident_type = classify_incident(description)
 
             st.subheader("Incident Classification")
             st.info(incident_type)
 
-            # ------------------------------
-            # SEVERITY PREDICTION
-            # ------------------------------
+            # Severity
             severity = predict_severity(root_cause)
 
             st.subheader("Incident Severity Level")
             st.metric("Severity Level", severity)
 
-            # ------------------------------
-            # RISK ASSESSMENT
-            # ------------------------------
+            # Risk Assessment
             likelihood, severity_val, risk_score, level = calculate_risk(root_cause)
 
             st.subheader("⚠ Risk Assessment")
@@ -94,9 +123,9 @@ if st.button("Analyze Incident"):
             col3.metric("Risk Score", risk_score)
             col4.metric("Risk Level", level)
 
-            # ------------------------------
-            # PROFESSIONAL RISK MATRIX
-            # ------------------------------
+            # ------------------------------------------------
+            # RISK MATRIX
+            # ------------------------------------------------
             st.subheader("Professional Risk Matrix")
 
             fig, ax = plt.subplots(figsize=(5,4))
@@ -130,9 +159,9 @@ if st.button("Analyze Incident"):
 
             st.pyplot(fig)
 
-            # ------------------------------
+            # ------------------------------------------------
             # RECOMMENDATIONS
-            # ------------------------------
+            # ------------------------------------------------
             recommendations = recommend_actions(root_cause)
 
             st.subheader("Recommended Safety Actions")
@@ -140,9 +169,9 @@ if st.button("Analyze Incident"):
             for r in recommendations:
                 st.write("•", r)
 
-            # ------------------------------
-            # CAPA ACTIONS
-            # ------------------------------
+            # ------------------------------------------------
+            # CAPA
+            # ------------------------------------------------
             capa = generate_capa(root_cause)
 
             st.subheader("Corrective Action")
@@ -151,18 +180,18 @@ if st.button("Analyze Incident"):
             st.subheader("Preventive Action")
             st.write(capa["preventive"])
 
-            # ------------------------------
+            # ------------------------------------------------
             # REPORT GENERATION
-            # ------------------------------
+            # ------------------------------------------------
             report = generate_report(description, root_cause)
 
             st.subheader("Generated Investigation Report")
 
             st.code(report)
 
-            # ------------------------------
+            # ------------------------------------------------
             # EXPORT REPORT
-            # ------------------------------
+            # ------------------------------------------------
             if st.button("Export Report to Word"):
 
                 file = export_to_word(report)
@@ -170,17 +199,48 @@ if st.button("Analyze Incident"):
                 st.success(f"Report Generated Successfully: {file}")
 
 # ----------------------------------------------------
-# INCIDENT ANALYTICS DASHBOARD
+# ANALYTICS DASHBOARD
 # ----------------------------------------------------
 st.divider()
 
-st.subheader("📊 Incident Root Cause Analytics")
+st.subheader("📊 Incident Analytics Dashboard")
 
 try:
 
     data = pd.read_csv("data/incidents_dataset.csv")
 
-    st.bar_chart(data["root_cause"].value_counts())
+    # Root Cause Chart
+    fig = px.bar(
+        data,
+        x="root_cause",
+        title="Incident Root Cause Distribution"
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+
+    # ------------------------------------------------
+    # TREND PREDICTION
+    # ------------------------------------------------
+    st.subheader("📈 Incident Trend Prediction")
+
+    if "incident_count" in data.columns:
+
+        trend = predict_trend(data)
+
+        trend_df = pd.DataFrame({
+            "Future Period": range(1,7),
+            "Predicted Incidents": trend
+        })
+
+        fig2 = px.line(
+            trend_df,
+            x="Future Period",
+            y="Predicted Incidents",
+            markers=True,
+            title="Predicted Incident Trend"
+        )
+
+        st.plotly_chart(fig2, use_container_width=True)
 
 except:
     st.info("Dataset not found for analytics.")
