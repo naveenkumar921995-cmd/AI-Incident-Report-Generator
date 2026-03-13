@@ -1,44 +1,39 @@
-from src.safety_standards import get_safety_standard
-from src.capa_engine import generate_capa
+from src.severity_predictor import predict_severity
+from src.capa_generator import generate_capa
+from src.incident_classifier import classify_incident
 
 def generate_report(description, root_cause):
 
-    standard = get_safety_standard(root_cause)
+    incident_type = classify_incident(description)
+
+    severity = predict_severity(root_cause)
 
     capa = generate_capa(root_cause)
 
     report = f"""
 AI INCIDENT INVESTIGATION REPORT
---------------------------------
 
 Incident Description
 {description}
 
+Incident Classification
+{incident_type}
+
 Root Cause
 {root_cause}
 
-Safety Standard Violation
-Code: {standard['violation_code']}
-Standard: {standard['standard']}
+Severity Level
+{severity}
 
 Corrective Action
-{capa['corrective']}
+{capa["corrective"]}
 
 Preventive Action
-{capa['preventive']}
+{capa["preventive"]}
 
-Monitoring Indexes
-• Incident Frequency Rate
-• Near Miss Reporting Rate
-• Corrective Action Closure Rate
-• PPE Compliance Monitoring
-
-Appendix E – CAPA Guidance
-Hierarchy of Controls Applied
-1. Elimination
-2. Engineering Control
-3. Administrative Control
-4. PPE
+Conclusion
+Investigation indicates incident occurred due to {root_cause}.
+Preventive measures should be implemented immediately.
 """
 
     return report
