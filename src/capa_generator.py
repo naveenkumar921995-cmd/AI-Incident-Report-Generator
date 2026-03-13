@@ -1,25 +1,35 @@
+from datetime import datetime, timedelta
+
 def generate_capa(root_cause):
 
-    capa = {
-
-        "Poor housekeeping": {
-            "corrective": "Clean affected work area immediately",
-            "preventive": "Implement daily housekeeping inspection checklist"
+    actions = {
+        "Poor Housekeeping": {
+            "corrective": "Clean affected area immediately and remove oil spill.",
+            "preventive": "Implement daily housekeeping inspection checklist."
         },
 
-        "Improper tool usage": {
-            "corrective": "Stop work and replace incorrect tools",
-            "preventive": "Conduct tool usage training program"
+        "Improper Tool Usage": {
+            "corrective": "Stop unsafe work and inspect tools.",
+            "preventive": "Conduct tool usage training for workers."
         },
 
-        "Inadequate workplace lighting": {
-            "corrective": "Install temporary lighting",
-            "preventive": "Conduct monthly lighting inspection"
+        "Inadequate Lighting": {
+            "corrective": "Install temporary lighting immediately.",
+            "preventive": "Perform monthly lighting inspection."
         }
-
     }
 
-    return capa.get(root_cause, {
-        "corrective": "Conduct investigation",
-        "preventive": "Implement safety awareness training"
-    })
+    default_action = {
+        "corrective": "Investigate issue and correct unsafe condition.",
+        "preventive": "Implement safety training and monitoring."
+    }
+
+    action = actions.get(root_cause, default_action)
+
+    return {
+        "corrective": action["corrective"],
+        "preventive": action["preventive"],
+        "responsible": "Safety Officer",
+        "target_date": (datetime.today() + timedelta(days=7)).strftime("%Y-%m-%d"),
+        "status": "Open"
+    }
