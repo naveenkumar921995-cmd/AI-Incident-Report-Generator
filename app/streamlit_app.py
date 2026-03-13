@@ -73,24 +73,38 @@ col1.metric("Likelihood", likelihood)
 col2.metric("Severity", severity)
 col3.metric("Risk Score", risk_score)
 col4.metric("Risk Level", level)
-            # RISK MATRIX CHART
-            # -----------------------------
-            st.subheader("Risk Matrix")
+            st.subheader("Professional Risk Matrix")
 
-            fig, ax = plt.subplots()
+fig, ax = plt.subplots()
 
-            ax.scatter(likelihood, severity, s=250)
+matrix = [
+    [1,2,3,4,5],
+    [2,4,6,8,10],
+    [3,6,9,12,15],
+    [4,8,12,16,20],
+    [5,10,15,20,25]
+]
 
-            ax.set_xlabel("Likelihood")
-            ax.set_ylabel("Severity")
+ax.imshow(matrix)
 
-            ax.set_xlim(0, 5)
-            ax.set_ylim(0, 5)
+for i in range(5):
+    for j in range(5):
+        ax.text(j, i, matrix[i][j], ha="center", va="center", color="black")
 
-            ax.set_title("Incident Risk Matrix")
+ax.scatter(likelihood-1, severity-1, s=300, marker="X")
 
-            st.pyplot(fig)
+ax.set_xticks(range(5))
+ax.set_yticks(range(5))
 
+ax.set_xticklabels([1,2,3,4,5])
+ax.set_yticklabels([1,2,3,4,5])
+
+ax.set_xlabel("Likelihood")
+ax.set_ylabel("Severity")
+
+ax.set_title("5x5 Incident Risk Matrix")
+
+st.pyplot(fig)
             # -----------------------------
             # RECOMMENDATIONS
             # -----------------------------
