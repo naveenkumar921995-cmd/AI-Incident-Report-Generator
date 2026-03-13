@@ -2,23 +2,24 @@ def generate_capa(root_cause):
 
     capa = {
 
-        "Poor housekeeping":[
-            "Immediate spill cleanup",
-            "Implement daily housekeeping inspection",
-            "Assign area cleanliness responsibility"
-        ],
+        "Poor housekeeping": {
+            "corrective": "Clean affected work area immediately",
+            "preventive": "Implement daily housekeeping inspection checklist"
+        },
 
-        "Improper tool usage":[
-            "Conduct tool safety training",
-            "Inspect tools before shift",
-            "Enforce PPE compliance"
-        ],
+        "Improper tool usage": {
+            "corrective": "Stop work and replace incorrect tools",
+            "preventive": "Conduct tool usage training program"
+        },
 
-        "Inadequate workplace lighting":[
-            "Install additional lighting",
-            "Conduct periodic lighting audits"
-        ]
+        "Inadequate workplace lighting": {
+            "corrective": "Install temporary lighting",
+            "preventive": "Conduct monthly lighting inspection"
+        }
 
     }
 
-    return capa.get(root_cause, ["Conduct safety investigation"])
+    return capa.get(root_cause, {
+        "corrective": "Conduct investigation",
+        "preventive": "Implement safety awareness training"
+    })
