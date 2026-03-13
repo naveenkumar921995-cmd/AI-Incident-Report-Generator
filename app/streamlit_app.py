@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 # Add project root directory to Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Import project modules
 from src.root_cause_predictor import predict_root_cause
 from src.report_generator import generate_report
 from src.recommendation_engine import recommend_actions
@@ -25,12 +24,33 @@ st.set_page_config(
 )
 
 # -----------------------------
+# CUSTOM STYLE
+# -----------------------------
+st.markdown("""
+<style>
+
+.main-title {
+    font-size:30px;
+    font-weight:700;
+}
+
+.small-text {
+    font-size:14px;
+    color:gray;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+
+# -----------------------------
 # HEADER
 # -----------------------------
-st.title("🛠 AI Incident Investigation Assistant")
-st.caption("Machine Learning Powered Root Cause Analysis System")
+st.markdown('<p class="main-title">🛠 AI Incident Investigation Assistant</p>', unsafe_allow_html=True)
+st.markdown('<p class="small-text">Machine Learning Powered Root Cause Analysis System</p>', unsafe_allow_html=True)
 
 st.divider()
+
 
 # -----------------------------
 # INCIDENT INPUT
@@ -39,7 +59,8 @@ st.subheader("Incident Description")
 
 description = st.text_area(
     "Enter Incident Description",
-    placeholder="Example: Worker slipped on oil spill near machine area"
+    placeholder="Example: Worker slipped on oil spill near machine area",
+    height=120
 )
 
 # -----------------------------
@@ -67,7 +88,7 @@ if st.button("Analyze Incident"):
             # -----------------------------
             likelihood, severity, risk_score, level = calculate_risk(root_cause)
 
-            st.subheader("⚠ Risk Assessment")
+            st.subheader("Risk Assessment")
 
             col1, col2, col3, col4 = st.columns(4)
 
@@ -77,11 +98,11 @@ if st.button("Analyze Incident"):
             col4.metric("Risk Level", level)
 
             # -----------------------------
-            # PROFESSIONAL RISK MATRIX
+            # RISK MATRIX
             # -----------------------------
-            st.subheader("Professional Risk Matrix")
+            st.subheader("Risk Matrix")
 
-            fig, ax = plt.subplots()
+            fig, ax = plt.subplots(figsize=(5,4))
 
             matrix = [
                 [1,2,3,4,5],
@@ -97,7 +118,7 @@ if st.button("Analyze Incident"):
                 for j in range(5):
                     ax.text(j, i, matrix[i][j], ha="center", va="center")
 
-            ax.scatter(likelihood-1, severity-1, s=300, marker="X")
+            ax.scatter(likelihood-1, severity-1, s=120, marker="X")
 
             ax.set_xticks(range(5))
             ax.set_yticks(range(5))
@@ -108,7 +129,7 @@ if st.button("Analyze Incident"):
             ax.set_xlabel("Likelihood")
             ax.set_ylabel("Severity")
 
-            ax.set_title("5x5 Incident Risk Matrix")
+            ax.set_title("5x5 Risk Matrix")
 
             st.pyplot(fig)
 
@@ -128,7 +149,12 @@ if st.button("Analyze Incident"):
             report = generate_report(description, root_cause)
 
             st.subheader("Generated Report")
-            st.code(report)
+
+            st.text_area(
+                "Investigation Report",
+                report,
+                height=250
+            )
 
             # -----------------------------
             # EXPORT REPORT
@@ -139,16 +165,22 @@ if st.button("Analyze Incident"):
 
                 st.success(f"Report Generated: {file}")
 
+
 # -----------------------------
 # ANALYTICS DASHBOARD
 # -----------------------------
 st.divider()
 
-st.subheader("📊 Incident Root Cause Analytics")
+st.subheader("Incident Root Cause Analytics")
 
 try:
+
     data = pd.read_csv("data/incidents_dataset.csv")
-    st.bar_chart(data["root_cause"].value_counts())
+
+    st.bar_chart(
+        data["root_cause"].value_counts(),
+        height=300
+    )
 
 except:
     st.info("Dataset not found for analytics.")
