@@ -1,25 +1,21 @@
 def get_safety_standard(root_cause):
 
     standards = {
-
-        "Poor housekeeping": {
+        "Human Error": {
             "violation_code": "BSC-HS-3.2",
-            "description": "Workplace must be maintained clean and free from spill hazards"
+            "standard": "British Safety Council - Worker Competency"
         },
-
-        "Improper tool usage": {
-            "violation_code": "OSHA-1926.300",
-            "description": "Tools must be used according to manufacturer safety guidelines"
+        "Equipment Failure": {
+            "violation_code": "DLF-SAFE-12",
+            "standard": "DLF Equipment Safety Guideline"
         },
-
-        "Inadequate workplace lighting": {
-            "violation_code": "BSC-HS-5.1",
-            "description": "Work areas must have adequate lighting for safe operations"
+        "Unsafe Condition": {
+            "violation_code": "OSHA-1910.22",
+            "standard": "Walking Working Surfaces"
         }
-
     }
 
     return standards.get(root_cause, {
-        "violation_code": "GEN-SAFE-01",
-        "description": "General workplace safety violation"
+        "violation_code": "GEN-001",
+        "standard": "General Safety Compliance"
     })
