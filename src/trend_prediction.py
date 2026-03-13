@@ -2,18 +2,16 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 import numpy as np
 
-def predict_trend(data):
+def predict_incident_trend(data):
 
-    data["index"] = range(len(data))
+    monthly_counts = data.groupby("month").size().reset_index(name="incidents")
 
-    X = data[["index"]]
-    y = data["incident_count"]
+    X = np.arange(len(monthly_counts)).reshape(-1,1)
+    y = monthly_counts["incidents"]
 
     model = LinearRegression()
-    model.fit(X, y)
+    model.fit(X,y)
 
-    future_index = np.array([[len(data) + i] for i in range(6)])
+    future = model.predict([[len(monthly_counts)]])
 
-    predictions = model.predict(future_index)
-
-    return predictions
+    return int(future[0])
