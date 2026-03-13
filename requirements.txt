@@ -1,7 +1,5 @@
 streamlit
 pandas
 scikit-learn
-spacy
-openai
 python-docx
-joblib
+matplotlib
