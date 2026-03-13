@@ -4,12 +4,17 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# Add project root to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+# Import project modules
 from src.root_cause_predictor import predict_root_cause
 from src.report_generator import generate_report
 from src.recommendation_engine import recommend_actions
 from src.risk_matrix import calculate_risk
+from src.safety_kpi import calculate_kpis
+from src.safety_standards import get_safety_standard
+from src.capa_engine import generate_capa
 from utils.document_exporter import export_to_word
 
 
@@ -22,23 +27,30 @@ st.set_page_config(
     layout="wide"
 )
 
+
 # -----------------------------
-# SIDEBAR
+# SIDEBAR NAVIGATION
 # -----------------------------
 st.sidebar.title("AI Safety System")
 
 page = st.sidebar.radio(
     "Navigation",
-    ["Incident Analysis", "Incident Analytics", "About Project"]
+    [
+        "Incident Analysis",
+        "Safety KPI Dashboard",
+        "Incident Analytics",
+        "About Project"
+    ]
 )
 
-# -----------------------------
-# PAGE 1
-# -----------------------------
+
+# =====================================================
+# PAGE 1 : INCIDENT ANALYSIS
+# =====================================================
 if page == "Incident Analysis":
 
     st.title("🛠 AI Incident Investigation Assistant")
-    st.caption("Machine Learning Powered Root Cause Analysis")
+    st.caption("Machine Learning Powered Safety Investigation System")
 
     st.divider()
 
@@ -57,10 +69,30 @@ if page == "Incident Analysis":
 
             with st.spinner("AI analyzing incident..."):
 
+                # Root cause prediction
                 root_cause = predict_root_cause(description)
 
                 st.subheader("Predicted Root Cause")
                 st.success(root_cause)
+
+                # Safety standard
+                standard = get_safety_standard(root_cause)
+
+                st.subheader("Safety Standard Violation")
+
+                st.write("Violation Code:", standard["violation_code"])
+                st.write("Safety Standard:", standard["standard"])
+
+                # CAPA actions
+                capa = generate_capa(root_cause)
+
+                st.subheader("Corrective Action")
+
+                st.info(capa["corrective"])
+
+                st.subheader("Preventive Action")
+
+                st.info(capa["preventive"])
 
                 # -----------------------------
                 # RISK ASSESSMENT
@@ -117,13 +149,13 @@ if page == "Incident Analysis":
                 # -----------------------------
                 recommendations = recommend_actions(root_cause)
 
-                st.subheader("Recommended Actions")
+                st.subheader("Recommended Safety Actions")
 
                 for r in recommendations:
                     st.write("•", r)
 
                 # -----------------------------
-                # REPORT
+                # REPORT GENERATION
                 # -----------------------------
                 report = generate_report(description, root_cause)
 
@@ -132,21 +164,53 @@ if page == "Incident Analysis":
                 st.text_area(
                     "Report",
                     report,
-                    height=220
+                    height=250
                 )
 
-                if st.button("Export Report"):
+                if st.button("Export Report to Word"):
 
                     file = export_to_word(report)
 
                     st.success(f"Report generated: {file}")
 
-# -----------------------------
-# PAGE 2
-# -----------------------------
+
+# =====================================================
+# PAGE 2 : SAFETY KPI DASHBOARD
+# =====================================================
+elif page == "Safety KPI Dashboard":
+
+    st.title("📊 Safety Monitoring Dashboard")
+
+    try:
+
+        data = pd.read_csv("data/incidents_dataset.csv")
+
+        kpis = calculate_kpis(data)
+
+        st.subheader("Safety Performance Indicators")
+
+        col1, col2, col3 = st.columns(3)
+
+        col1.metric("Total Incidents", kpis["Total Incidents"])
+        col2.metric("Near Miss Reports", kpis["Near Miss Reports"])
+        col3.metric("Unsafe Conditions", kpis["Unsafe Condition Reports"])
+
+        col4, col5, col6 = st.columns(3)
+
+        col4.metric("Closure Rate (%)", kpis["Closure Rate (%)"])
+        col5.metric("Training Compliance (%)", kpis["Training Compliance (%)"])
+        col6.metric("PPE Compliance (%)", kpis["PPE Compliance (%)"])
+
+    except:
+        st.warning("Dataset not found")
+
+
+# =====================================================
+# PAGE 3 : INCIDENT ANALYTICS
+# =====================================================
 elif page == "Incident Analytics":
 
-    st.title("📊 Incident Analytics Dashboard")
+    st.title("📈 Incident Analytics")
 
     try:
 
@@ -155,41 +219,45 @@ elif page == "Incident Analytics":
         st.subheader("Root Cause Distribution")
 
         st.bar_chart(
-            data["root_cause"].value_counts(),
-            height=300
+            data["root_cause"].value_counts()
         )
 
-        st.subheader("Dataset Preview")
+        st.subheader("Incident Dataset")
 
         st.dataframe(data.head())
 
     except:
         st.warning("Dataset not found")
 
-# -----------------------------
-# PAGE 3
-# -----------------------------
+
+# =====================================================
+# PAGE 4 : ABOUT PROJECT
+# =====================================================
 elif page == "About Project":
 
     st.title("About This Project")
 
     st.write("""
-This system is an **AI-powered Incident Investigation Assistant** designed to support safety professionals.
+This system is an **AI-powered Incident Investigation Assistant**
+designed to support workplace safety professionals.
 
-### Features
+### Key Features
 
-• Machine Learning Root Cause Prediction  
+• AI Root Cause Prediction  
 • Risk Matrix Assessment  
-• Safety Recommendation Engine  
-• Automated Investigation Reports  
-• Incident Analytics Dashboard  
+• Safety Standard Violation Detection  
+• CAPA (Corrective & Preventive Action) Engine  
+• Safety Monitoring KPI Dashboard  
+• Incident Analytics  
 
 ### Technology Stack
 
 Python  
 Machine Learning  
-Streamlit Dashboard  
-Scikit-Learn  
+Streamlit  
+Pandas  
+Matplotlib  
 
-This project demonstrates how AI can assist **workplace safety investigations and risk management**.
+This project demonstrates how **AI can support safety investigations
+and risk management in industrial environments.**
 """)
