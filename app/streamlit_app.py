@@ -1,6 +1,7 @@
 import streamlit as st
 import sys
 import os
+import pandas as pd
 
 # Add project root directory to Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -11,31 +12,82 @@ from src.recommendation_engine import recommend_actions
 from utils.document_exporter import export_to_word
 
 
+# -----------------------------
+# PAGE CONFIG
+# -----------------------------
+st.set_page_config(
+    page_title="AI Incident Investigation Assistant",
+    page_icon="🛠",
+    layout="wide"
+)
+
+# -----------------------------
+# HEADER
+# -----------------------------
 st.title("🛠 AI Incident Investigation Assistant")
-st.caption("Machine Learning Powered Root Cause Analysis")
+st.caption("Machine Learning Powered Root Cause Analysis System")
 
-description = st.text_area("Enter Incident Description")
+st.divider()
 
+# -----------------------------
+# INCIDENT INPUT
+# -----------------------------
+st.subheader("Incident Description")
+
+description = st.text_area(
+    "Enter Incident Description",
+    placeholder="Example: Worker slipped on oil spill near machine area"
+)
+
+# -----------------------------
+# ANALYZE BUTTON
+# -----------------------------
 if st.button("Analyze Incident"):
 
-    root_cause = predict_root_cause(description)
+    if description.strip() == "":
+        st.warning("Please enter an incident description.")
+    else:
 
-    st.subheader("Predicted Root Cause")
-    st.write(root_cause)
+        with st.spinner("Analyzing incident with AI..."):
 
-    recommendations = recommend_actions(root_cause)
+            root_cause = predict_root_cause(description)
 
-    st.subheader("Recommended Actions")
+            st.subheader("Predicted Root Cause")
+            st.success(root_cause)
 
-    for r in recommendations:
-        st.write("-", r)
+            # Recommendations
+            recommendations = recommend_actions(root_cause)
 
-    report = generate_report(description, root_cause)
+            st.subheader("Recommended Actions")
 
-    st.subheader("Generated Report")
-    st.code(report)
+            for r in recommendations:
+                st.write("•", r)
 
-    if st.button("Export Report"):
+            # Generate report
+            report = generate_report(description, root_cause)
 
-        file = export_to_word(report)
-        st.success("Report Generated: " + file)
+            st.subheader("Generated Report")
+
+            st.code(report)
+
+            # Export button
+            if st.button("Export Report to Word"):
+
+                file = export_to_word(report)
+
+                st.success(f"Report Generated: {file}")
+
+# -----------------------------
+# ANALYTICS DASHBOARD
+# -----------------------------
+st.divider()
+
+st.subheader("📊 Incident Root Cause Analytics")
+
+try:
+    data = pd.read_csv("data/incidents_dataset.csv")
+
+    st.bar_chart(data["root_cause"].value_counts())
+
+except:
+    st.info("Dataset not found for analytics.")
