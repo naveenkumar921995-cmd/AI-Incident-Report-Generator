@@ -4,260 +4,183 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Add project root to path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# Add project root directory
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # Import project modules
 from src.root_cause_predictor import predict_root_cause
 from src.report_generator import generate_report
 from src.recommendation_engine import recommend_actions
 from src.risk_matrix import calculate_risk
-from src.safety_kpi import calculate_kpis
-from src.safety_standards import get_safety_standard
-from src.capa_engine import generate_capa
+from src.incident_classifier import classify_incident
+from src.severity_predictor import predict_severity
+from src.capa_generator import generate_capa
 from utils.document_exporter import export_to_word
 
 
-# -----------------------------
+# ----------------------------------------------------
 # PAGE CONFIG
-# -----------------------------
+# ----------------------------------------------------
 st.set_page_config(
     page_title="AI Incident Investigation Assistant",
     page_icon="🛠",
     layout="wide"
 )
 
+# ----------------------------------------------------
+# HEADER
+# ----------------------------------------------------
+st.title("🛠 AI Incident Investigation Assistant")
+st.caption("AI Powered Safety Investigation & Root Cause Analysis System")
 
-# -----------------------------
-# SIDEBAR NAVIGATION
-# -----------------------------
-st.sidebar.title("AI Safety System")
+st.divider()
 
-page = st.sidebar.radio(
-    "Navigation",
-    [
-        "Incident Analysis",
-        "Safety KPI Dashboard",
-        "Incident Analytics",
-        "About Project"
-    ]
+# ----------------------------------------------------
+# INCIDENT INPUT
+# ----------------------------------------------------
+st.subheader("Incident Description")
+
+description = st.text_area(
+    "Enter Incident Description",
+    placeholder="Example: Worker slipped on oil spill near machine area"
 )
 
+# ----------------------------------------------------
+# ANALYZE INCIDENT
+# ----------------------------------------------------
+if st.button("Analyze Incident"):
 
-# =====================================================
-# PAGE 1 : INCIDENT ANALYSIS
-# =====================================================
-if page == "Incident Analysis":
+    if description.strip() == "":
+        st.warning("Please enter an incident description.")
+    else:
 
-    st.title("🛠 AI Incident Investigation Assistant")
-    st.caption("Machine Learning Powered Safety Investigation System")
+        with st.spinner("Analyzing incident using AI models..."):
 
-    st.divider()
+            # ------------------------------
+            # ROOT CAUSE PREDICTION
+            # ------------------------------
+            root_cause = predict_root_cause(description)
 
-    description = st.text_area(
-        "Enter Incident Description",
-        placeholder="Example: Worker slipped on oil spill near machine area",
-        height=120
-    )
+            st.subheader("Predicted Root Cause")
+            st.success(root_cause)
 
-    if st.button("Analyze Incident"):
+            # ------------------------------
+            # INCIDENT CLASSIFICATION
+            # ------------------------------
+            incident_type = classify_incident(description)
 
-        if description.strip() == "":
-            st.warning("Please enter incident description")
+            st.subheader("Incident Classification")
+            st.info(incident_type)
 
-        else:
+            # ------------------------------
+            # SEVERITY PREDICTION
+            # ------------------------------
+            severity = predict_severity(root_cause)
 
-            with st.spinner("AI analyzing incident..."):
+            st.subheader("Incident Severity Level")
+            st.metric("Severity Level", severity)
 
-                # Root cause prediction
-                root_cause = predict_root_cause(description)
+            # ------------------------------
+            # RISK ASSESSMENT
+            # ------------------------------
+            likelihood, severity_val, risk_score, level = calculate_risk(root_cause)
 
-                st.subheader("Predicted Root Cause")
-                st.success(root_cause)
+            st.subheader("⚠ Risk Assessment")
 
-                # Safety standard
-                standard = get_safety_standard(root_cause)
+            col1, col2, col3, col4 = st.columns(4)
 
-                st.subheader("Safety Standard Violation")
+            col1.metric("Likelihood", likelihood)
+            col2.metric("Severity", severity_val)
+            col3.metric("Risk Score", risk_score)
+            col4.metric("Risk Level", level)
 
-                st.write("Violation Code:", standard["violation_code"])
-                st.write("Safety Standard:", standard["standard"])
+            # ------------------------------
+            # PROFESSIONAL RISK MATRIX
+            # ------------------------------
+            st.subheader("Professional Risk Matrix")
 
-                # CAPA actions
-                capa = generate_capa(root_cause)
+            fig, ax = plt.subplots(figsize=(5,4))
 
-                st.subheader("Corrective Action")
+            matrix = [
+                [1,2,3,4,5],
+                [2,4,6,8,10],
+                [3,6,9,12,15],
+                [4,8,12,16,20],
+                [5,10,15,20,25]
+            ]
 
-                st.info(capa["corrective"])
+            ax.imshow(matrix)
 
-                st.subheader("Preventive Action")
+            for i in range(5):
+                for j in range(5):
+                    ax.text(j, i, matrix[i][j], ha="center", va="center")
 
-                st.info(capa["preventive"])
+            ax.scatter(likelihood-1, severity_val-1, s=200, marker="X")
 
-                # -----------------------------
-                # RISK ASSESSMENT
-                # -----------------------------
-                likelihood, severity, risk_score, level = calculate_risk(root_cause)
+            ax.set_xticks(range(5))
+            ax.set_yticks(range(5))
 
-                st.subheader("Risk Assessment")
+            ax.set_xticklabels([1,2,3,4,5])
+            ax.set_yticklabels([1,2,3,4,5])
 
-                col1, col2, col3, col4 = st.columns(4)
+            ax.set_xlabel("Likelihood")
+            ax.set_ylabel("Severity")
 
-                col1.metric("Likelihood", likelihood)
-                col2.metric("Severity", severity)
-                col3.metric("Risk Score", risk_score)
-                col4.metric("Risk Level", level)
+            ax.set_title("5x5 Incident Risk Matrix")
 
-                # -----------------------------
-                # RISK MATRIX
-                # -----------------------------
-                st.subheader("Risk Matrix")
+            st.pyplot(fig)
 
-                fig, ax = plt.subplots(figsize=(4,3))
+            # ------------------------------
+            # RECOMMENDATIONS
+            # ------------------------------
+            recommendations = recommend_actions(root_cause)
 
-                matrix = [
-                    [1,2,3,4,5],
-                    [2,4,6,8,10],
-                    [3,6,9,12,15],
-                    [4,8,12,16,20],
-                    [5,10,15,20,25]
-                ]
+            st.subheader("Recommended Safety Actions")
 
-                ax.imshow(matrix)
+            for r in recommendations:
+                st.write("•", r)
 
-                for i in range(5):
-                    for j in range(5):
-                        ax.text(j, i, matrix[i][j], ha="center", va="center")
+            # ------------------------------
+            # CAPA ACTIONS
+            # ------------------------------
+            capa = generate_capa(root_cause)
 
-                ax.scatter(likelihood-1, severity-1, s=120, marker="X")
+            st.subheader("Corrective Action")
+            st.write(capa["corrective"])
 
-                ax.set_xticks(range(5))
-                ax.set_yticks(range(5))
+            st.subheader("Preventive Action")
+            st.write(capa["preventive"])
 
-                ax.set_xticklabels([1,2,3,4,5])
-                ax.set_yticklabels([1,2,3,4,5])
+            # ------------------------------
+            # REPORT GENERATION
+            # ------------------------------
+            report = generate_report(description, root_cause)
 
-                ax.set_xlabel("Likelihood")
-                ax.set_ylabel("Severity")
+            st.subheader("Generated Investigation Report")
 
-                ax.set_title("5x5 Risk Matrix")
+            st.code(report)
 
-                st.pyplot(fig)
+            # ------------------------------
+            # EXPORT REPORT
+            # ------------------------------
+            if st.button("Export Report to Word"):
 
-                # -----------------------------
-                # RECOMMENDATIONS
-                # -----------------------------
-                recommendations = recommend_actions(root_cause)
+                file = export_to_word(report)
 
-                st.subheader("Recommended Safety Actions")
+                st.success(f"Report Generated Successfully: {file}")
 
-                for r in recommendations:
-                    st.write("•", r)
+# ----------------------------------------------------
+# INCIDENT ANALYTICS DASHBOARD
+# ----------------------------------------------------
+st.divider()
 
-                # -----------------------------
-                # REPORT GENERATION
-                # -----------------------------
-                report = generate_report(description, root_cause)
+st.subheader("📊 Incident Root Cause Analytics")
 
-                st.subheader("Generated Investigation Report")
+try:
 
-                st.text_area(
-                    "Report",
-                    report,
-                    height=250
-                )
+    data = pd.read_csv("data/incidents_dataset.csv")
 
-                if st.button("Export Report to Word"):
+    st.bar_chart(data["root_cause"].value_counts())
 
-                    file = export_to_word(report)
-
-                    st.success(f"Report generated: {file}")
-
-
-# =====================================================
-# PAGE 2 : SAFETY KPI DASHBOARD
-# =====================================================
-elif page == "Safety KPI Dashboard":
-
-    st.title("📊 Safety Monitoring Dashboard")
-
-    try:
-
-        data = pd.read_csv("data/incidents_dataset.csv")
-
-        kpis = calculate_kpis(data)
-
-        st.subheader("Safety Performance Indicators")
-
-        col1, col2, col3 = st.columns(3)
-
-        col1.metric("Total Incidents", kpis["Total Incidents"])
-        col2.metric("Near Miss Reports", kpis["Near Miss Reports"])
-        col3.metric("Unsafe Conditions", kpis["Unsafe Condition Reports"])
-
-        col4, col5, col6 = st.columns(3)
-
-        col4.metric("Closure Rate (%)", kpis["Closure Rate (%)"])
-        col5.metric("Training Compliance (%)", kpis["Training Compliance (%)"])
-        col6.metric("PPE Compliance (%)", kpis["PPE Compliance (%)"])
-
-    except:
-        st.warning("Dataset not found")
-
-
-# =====================================================
-# PAGE 3 : INCIDENT ANALYTICS
-# =====================================================
-elif page == "Incident Analytics":
-
-    st.title("📈 Incident Analytics")
-
-    try:
-
-        data = pd.read_csv("data/incidents_dataset.csv")
-
-        st.subheader("Root Cause Distribution")
-
-        st.bar_chart(
-            data["root_cause"].value_counts()
-        )
-
-        st.subheader("Incident Dataset")
-
-        st.dataframe(data.head())
-
-    except:
-        st.warning("Dataset not found")
-
-
-# =====================================================
-# PAGE 4 : ABOUT PROJECT
-# =====================================================
-elif page == "About Project":
-
-    st.title("About This Project")
-
-    st.write("""
-This system is an **AI-powered Incident Investigation Assistant**
-designed to support workplace safety professionals.
-
-### Key Features
-
-• AI Root Cause Prediction  
-• Risk Matrix Assessment  
-• Safety Standard Violation Detection  
-• CAPA (Corrective & Preventive Action) Engine  
-• Safety Monitoring KPI Dashboard  
-• Incident Analytics  
-
-### Technology Stack
-
-Python  
-Machine Learning  
-Streamlit  
-Pandas  
-Matplotlib  
-
-This project demonstrates how **AI can support safety investigations
-and risk management in industrial environments.**
-""")
+except:
+    st.info("Dataset not found for analytics.")
