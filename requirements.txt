@@ -1,5 +1,8 @@
 streamlit
 pandas
+numpy
 scikit-learn
-python-docx
 matplotlib
+plotly
+opencv-python-headless
+python-docx
